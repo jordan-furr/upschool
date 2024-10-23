@@ -703,7 +703,6 @@ a:hover {
 }
 
 .page {
-    background-color: #005BE3;
     height: calc(100vh - 46px);
 }
 
@@ -717,6 +716,10 @@ a:hover {
     letter-spacing: 0.03rem;
 }
 
+.logo-cont {
+    padding-left: 28px;
+}
+
 .logo {
     color: black;
     font-weight: 600 !important;
@@ -726,6 +729,19 @@ a:hover {
 .menu-item {
     color: white;
     padding: 14px 16px;
+}
+
+.info-button-cont {
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    z-index: 1;
+}
+
+.info-button {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
 }
 
 .menu-item:hover {
@@ -770,6 +786,13 @@ a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.img-half {
+    background-image: url('/assets/up-school-earnest-uncertainty.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 @media (max-width: 1000px) {
