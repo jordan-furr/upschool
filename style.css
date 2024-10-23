@@ -24,7 +24,7 @@ body {
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 p {
@@ -702,6 +702,11 @@ a:hover {
     cursor: default;
 }
 
+.page {
+    background-color: #005BE3;
+    height: calc(100vh - 46px);
+}
+
 .bg-blue {
     background-color: var(--blue);
 }
@@ -727,7 +732,7 @@ a:hover {
     color: var(--yellow);
 }
 
-.menu-item.active p {
+.active {
     color: #52B6FF !important;
 }
 
