@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Forum&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
     --blue: #005BE3;
@@ -155,6 +155,10 @@ h6 {
 
 .w-66 {
     width: 66.666%;
+}
+
+.w-65 {
+    width: 65%;
 }
 
 .w-60 {
@@ -710,35 +714,35 @@ a:hover {
     background-color: var(--blue);
 }
 
-.header p {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.03rem;
-}
+.blue-hover:hover {
+    color: var(--blue);
+}  
 
 .logo-cont {
     padding-left: 28px;
 }
 
 .logo {
-    color: black;
-    font-weight: 600 !important;
     font-size: 22px !important;
 }
 
 .menu-item {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 14px;
 }
+
 
 .info-button-cont {
     position: absolute;
-    bottom: 28px;
-    left: 28px;
+    bottom: 27px;
     z-index: 1;
 }
 
-.info-button {
+.nav-text {
+    color: black;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.03rem;
@@ -749,7 +753,7 @@ a:hover {
 }
 
 .active {
-    color: #52B6FF !important;
+    color: var(--yellow) !important;
 }
 
 .dropdown {
@@ -766,6 +770,8 @@ a:hover {
 
 .dropdown-content p { 
     font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03rem;
 }
 
 .dropdown-content a {
@@ -793,6 +799,89 @@ a:hover {
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+.landing {
+    box-sizing: border-box;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.landing p {
+    font-family: 'Libre Baskerville';
+    font-weight: 100;
+    font-size: 62px;
+    line-height: 80px;
+}
+
+.projects-home {
+    margin-top: 1.5rem;
+}
+
+.project-item {
+    border-bottom: 1px solid black;
+    padding: 18px 0 8px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville';
+}
+
+.project-title {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.project-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0 10px;
+    padding-top: 14px;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.project-title span {
+    cursor: inherit;
+}
+
+.plus-icon {
+    font-size: 42px;
+    font-weight: 300;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.projects-home .active {
+    color: black !important;
+}
+
+.project-item.active .project-content {
+    max-height: 700px;
+}
+  
+.project-item.active .plus-icon {
+    transform: rotate(90deg);
+}
+
+.project-title:hover .plus-icon {
+    transform: rotate(90deg);
+}
+
+.accordion-enter-active, .accordion-leave-active {
+  transition: max-height 200ms ease;
+}
+
+.accordion-enter, .accordion-leave-to /* .accordion-leave-active in <2.1.8 */ {
+  max-height: 0;
 }
 
 @media (max-width: 1000px) {

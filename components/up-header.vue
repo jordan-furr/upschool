@@ -2,8 +2,8 @@
     <div class="header-cont">
         <div class="header">
             <div class="flex flex-row align-center">
-                <div class="w-50 borderbox logo-cont">
-                    <a href="/" exact-active-class="active"><p class="logo">UP SCHOOL</p></a>
+                <div class="w-50 borderbox ph4">
+                    <a href="/" exact-active-class="active"><p class="logo nav-text blue-hover">UP SCHOOL</p></a>
                 </div>
                 <div class="bg-blue w-50 borderbox ph3">
                     <div class="flex flex-row space-between menu">
