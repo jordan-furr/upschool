@@ -1,11 +1,11 @@
 <template>
-    <div class="header-cont">
+    <div class="header-cont bg-blue">
         <div class="header">
             <div class="flex flex-row align-center">
-                <div class="w-50 borderbox logo-cont">
+                <div class="w-50 borderbox ph3 pv25">
                     <a href="/" exact-active-class="active"><p class="logo">UP SCHOOL</p></a>
                 </div>
-                <div class="bg-blue w-50 borderbox ph3">
+                <div class="w-50 borderbox ph3">
                     <div class="flex flex-row space-between menu">
                         <div class="flex flex-row info-menu">
                             <nuxt-link to="/articles" class="menu-item" exact-active-class="active"><p>ARTICLES</p></nuxt-link>
