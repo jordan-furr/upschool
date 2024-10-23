@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Forum&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Forum&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Forum&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
     --blue: #005BE3;
@@ -824,9 +820,10 @@ a:hover {
 
 .project-item {
     border-bottom: 1px solid black;
-    padding: 14px 0 8px 0;
+    padding: 18px 0 8px 0;
     cursor: pointer;
     box-sizing: border-box;
+    font-family: 'Libre Baskerville';
 }
 
 .project-title {
@@ -834,7 +831,6 @@ a:hover {
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto Slab';
     font-weight: 300;
     font-size: 24px;
     line-height: 28px;
@@ -845,7 +841,11 @@ a:hover {
 .project-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0 10px;
+    padding-top: 14px;
+    font-weight: 100;
+    font-size: 14px;
 }
 
 .project-title span {
@@ -853,19 +853,35 @@ a:hover {
 }
 
 .plus-icon {
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 300;
-    padding-left: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transform-origin: center;
+    transition: transform 0.2s ease;
 }
 
-.project-item.active .project-icon {
+.projects-home .active {
+    color: black !important;
+}
+
+.project-item.active .project-content {
+    max-height: 700px;
+}
+  
+.project-item.active .plus-icon {
     transform: rotate(90deg);
 }
 
-.project-title:hover .project-icon {
-    transform: rotate(45deg);
+.project-title:hover .plus-icon {
+    transform: rotate(90deg);
+}
+
+.accordion-enter-active, .accordion-leave-active {
+  transition: max-height 200ms ease;
+}
+
+.accordion-enter, .accordion-leave-to /* .accordion-leave-active in <2.1.8 */ {
+  max-height: 0;
 }
 
 @media (max-width: 1000px) {

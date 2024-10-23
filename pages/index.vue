@@ -9,41 +9,19 @@
                     <p class="nav-text">PROJECTS</p>
                 </div>
                 <div class="projects-home">
-                    <div class="project-item">
-                        <div class="project-title">
-                            <span>The Upside of Uncertainty</span>
-                            <span class="plus-icon">+</span>
+                    <div class="project-item" v-for="(item, index) in items" :key="index"
+                        :class="{ 'active': activeIndex === index }">
+                        <div class="project-title" @click="toggleAccordion(index)">
+                            <span>{{ item.title }}</span>
+                            <span :class="{ 'plus-icon': true, 'rotate-icon': activeIndex === index }">
+                                +
+                            </span>
                         </div>
-                        <div class="project-content">
-                            <p>This is some hidden content related to 'The Upside of Uncertainty'.</p>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title">
-                            <span>Earnest Project</span>
-                            <span class="plus-icon">+</span>
-                        </div>
-                        <div class="project-content">
-                            <p>This is some hidden content related to 'The Upside of Uncertainty'.</p>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title">
-                            <span>Affection Economy</span>
-                            <span class="plus-icon">+</span>
-                        </div>
-                        <div class="project-content">
-                            <p>This is some hidden content related to 'The Upside of Uncertainty'.</p>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title">
-                            <span>Hope Accelerator</span>
-                            <span class="plus-icon">+</span>
-                        </div>
-                        <div class="project-content">
-                            <p>This is some hidden content related to 'The Upside of Uncertainty'.</p>
-                        </div>
+                        <transition name="accordion">
+                            <div v-show="activeIndex === index" class="project-content">
+                                <p>{{ item.content }}</p>
+                            </div>
+                        </transition>
                     </div>
                 </div>
             </div>
@@ -56,3 +34,36 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      activeIndex: null, // Tracks which item is opened
+      items: [
+        {
+          title: "The Upside of Uncertainty",
+          content: "Detailed content about The Upside of Uncertainty..."
+        },
+        {
+          title: "Earnest Project",
+          content: "Detailed content about the Earnest Project..."
+        },
+        {
+          title: "Affection Economy",
+          content: "Detailed content about the Affection Economy..."
+        },
+        {
+          title: "Hope Accelerator",
+          content: "Detailed content about the Hope Accelerator..."
+        }
+      ]
+    };
+  },
+  methods: {
+    toggleAccordion(index) {
+      this.activeIndex = this.activeIndex === index ? null : index;
+    }
+  }
+};
+</script>
