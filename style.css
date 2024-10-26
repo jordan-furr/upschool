@@ -748,6 +748,13 @@ a:hover {
     letter-spacing: 0.03rem;
 }
 
+.sm-head-text {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+}
+
 .menu-item:hover {
     color: var(--yellow);
 }
@@ -838,8 +845,8 @@ a:hover {
 .landing p {
     font-family: 'Spectral';
     font-weight: 300;
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 66px;
+    line-height: 72px;
 }
 
 .projects-home {
@@ -886,7 +893,7 @@ a:hover {
     cursor: pointer;
     transform-origin: center;
     transition: transform 0.2s ease;
-    color: #005BE3;
+    color: var(--orange);
 }
 
 .projects-home .active {
@@ -929,6 +936,7 @@ a:hover {
 }
 
 .view-text {
+    color: black;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
@@ -939,8 +947,9 @@ a:hover {
     color: var(--blue);
 }
 
-.bg-wheat {
-    background-color: wheat;
+.past-ev {
+    padding-top: 2rem;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1000px) {

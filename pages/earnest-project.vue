@@ -8,7 +8,7 @@
                 <div class="about-text">
                     <p>Can earnestness change the world? Our exploration begins here.</p>
                     <p>Earnest Project is a community and research initiative. Join us in the celebrating the joy of earnest living. </p>
-                    <p class="view-text">View --></p>
+                    <a href="https://earnestproject.com/" target="_blank"><p class="view-text">View --></p></a>
                 </div>
             </div>
             <div class="w-50 img-half">

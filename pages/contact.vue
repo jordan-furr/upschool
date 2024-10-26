@@ -6,7 +6,7 @@
                     <p>Contact</p>
                 </div>
                 <div class="about-text">
-                    <p>Can earnestness change the world? Our exploration begins here.</p>
+                    <p>You can reach us at info@upschool.org</p>
                 </div>
             </div>
             <div class="w-50 img-half">

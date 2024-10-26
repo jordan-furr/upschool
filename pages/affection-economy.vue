@@ -3,12 +3,11 @@
         <div class="flex flex-row w-100">
             <div class="w-50 flex flex-col ph4 borderbox">
                 <div class="landing">
-                    <p>The Upside of Uncertainty</p>
+                    <p>Affection Economy</p>
                 </div>
                 <div class="about-text">
-                    <p>Can earnestness change the world? Our exploration begins here.</p>
-                    <p>Earnest Project is a community and research initiative. Join us in the celebrating the joy of earnest living. </p>
-                    <p class="view-text">View --></p>
+                    <p>Work and love and love and work. (The Win Win Economy)</p>
+                    <p>Working from a place of affection (for what you do and who you are doing it with and for) where dignity, good will and care are reciprocated.</p>
                 </div>
             </div>
             <div class="w-50 img-half">

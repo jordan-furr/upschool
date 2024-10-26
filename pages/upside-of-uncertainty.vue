@@ -6,9 +6,10 @@
                     <p>The Upside of Uncertainty</p>
                 </div>
                 <div class="about-text">
-                    <p>Can earnestness change the world? Our exploration begins here.</p>
-                    <p>Earnest Project is a community and research initiative. Join us in the celebrating the joy of earnest living. </p>
-                    <p class="view-text">View --></p>
+                    <p>Uncertainty ability is an essential skillset for our evolving world. Training for individuals and teams.</p>
+                    <p>The Upside of Uncertainty teaches uncertainty + possibility are two sides of the same coin.</p>
+                    <a href="https://www.theupsideofuncertainty.com/" target="_blank"><p class="view-text">View --></p></a>
+                    
                 </div>
             </div>
             <div class="w-50 img-half">

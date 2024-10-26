@@ -6,7 +6,8 @@
                     <p>Articles</p>
                 </div>
                 <div class="about-text">
-                    <p>Can earnestness change the world? Our exploration begins here.</p>
+                    <p>Read the Journal hosted on The Upside.</p>
+                    <a href="https://www.theupsideofuncertainty.com/journal" target="_blank"><p class="view-text">View --></p></a>
                 </div>
             </div>
             <div class="w-50 img-half">

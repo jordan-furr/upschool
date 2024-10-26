@@ -6,9 +6,8 @@
                     <p>Hope Accelerator</p>
                 </div>
                 <div class="about-text">
-                    <p>Can earnestness change the world? Our exploration begins here.</p>
-                    <p>Earnest Project is a community and research initiative. Join us in the celebrating the joy of earnest living. </p>
-                    <p class="view-text">View --></p>
+                    <p>Accelerating hope in the world.</p>
+                    <p>Working from a place of affection (for what you do and who you are doing it with and for) where dignity, good will and care are reciprocated.</p>
                 </div>
             </div>
             <div class="w-50 img-half">
