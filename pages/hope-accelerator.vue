@@ -1,7 +1,7 @@
 <template>
     <div class="hope-page">
         <up-header :logoColor="'#ddedf0'" :headerColor="'#07252b'" :textColor="'#ddedf0'" :navColor="'#07252b'" />
-        <div class="flex flex-row w-100">
+        <div class="flex flex-row w-100 page-content">
             <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Hope Accelerator</p>
@@ -15,7 +15,7 @@
 
             </div>
         </div>
-        <div class="info-button-cont pl4">
+        <div class="info-button-cont pl4 page-content">
             <p class="nav-text blue-hover">INFO</p>
         </div>
     </div>

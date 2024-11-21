@@ -341,6 +341,10 @@ h6 {
     padding-right: 1rem;
 }
 
+.pr4 {
+    padding-right: 1.5rem;
+}
+
 .pt1 {
     padding-top: 0.25rem;
 }
@@ -735,19 +739,39 @@ a:hover {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
     letter-spacing: 0.03rem;
+    font-family: 'Spectral';
+    color: black;
 }
 
 .menu-item {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     letter-spacing: 0.03rem;
     color: white;
-    padding: 14px 14px;
+    padding-left: 18px;
+    padding-right: 0px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family: 'Spectral';
 }
 
+.alt-header {
+    border-bottom: 1px solid #70D884;
+    padding: 16px 0;
+}
+
+.alt-menu-item {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    color: black;
+    padding: 16px 0px;
+    font-family: 'Spectral';
+    box-sizing: border-box;
+}
 
 .info-button-cont {
     position: absolute;
@@ -967,31 +991,39 @@ a:hover {
 }
 
 .earnest-page {
-    background-color: #f0e4c9;
+    background-color: #FACAC5;
 }
 
 .hope-page {
     background-color: #42270f;
 }
 
-.hope-page p {
+.hope-page .page-content p {
     color: #ddedf0;
 }
 
 .affection-page {
-    background-color: #876220;
+    background-color: #ffd036;
 }
 
-.affection-page p {
-    color: white;
+.affection-page .page-content p {
+    color: #03301a;
 }
 
 .upside-page {
     background-color: #0C3F41;
 }
 
-.upside-page p {
+.upside-page .page-content p {
     color: #C9FFAF;
+}
+
+.article-content {
+    margin-top: 3rem;
+}
+
+.event-content {
+    margin-top: 3rem;
 }
 
 @media (max-width: 1000px) {

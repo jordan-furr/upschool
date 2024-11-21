@@ -1,8 +1,8 @@
 <template>
     <div class="affection-page">
-        <up-header :logoColor="'white'" :headerColor="'#91c493'" :textColor="'white'" :navColor="'#91c493'" />
-        <div class="flex flex-row w-100">
-            <div class="page-content w-618 flex flex-col ph4 borderbox">
+        <up-header :logoColor="'#03301a'" :headerColor="'#eda737'" :textColor="'#03301a'" :navColor="'#eda737'" />
+        <div class="flex flex-row w-100 page-content">
+            <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Affection Economy</p>
                 </div>
@@ -15,7 +15,7 @@
 
             </div>
         </div>
-        <div class="info-button-cont pl4">
+        <div class="info-button-cont pl4 page-content">
             <p class="nav-text blue-hover">INFO</p>
         </div>
     </div>
