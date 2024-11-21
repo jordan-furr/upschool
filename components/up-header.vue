@@ -1,35 +1,71 @@
 <template>
-    <div class="header-cont">
-        <div class="header">
-            <div class="flex flex-row align-center">
-                <div class="w-50 borderbox ph4">
-                    <a href="/" exact-active-class="active"><p class="logo nav-text blue-hover">UP SCHOOL</p></a>
-                </div>
-                <div :style="{backgroundColor: navColor}" class="w-50 borderbox ph3">
-                    <div class="flex flex-row space-between menu">
-                        <div class="flex flex-row info-menu">
-                            <nuxt-link to="/articles" class="menu-item" exact-active-class="active"><p>ARTICLES</p></nuxt-link>
-                            <nuxt-link to="/events" class="menu-item"  exact-active-class="active"><p>EVENTS</p></nuxt-link>
-                            <nuxt-link to="/contact" class="menu-item"  exact-active-class="active"><p>CONTACT</p></nuxt-link>
-                        </div>
-                        <div>
-                            <div class="dropdown">
-                                <p class="menu-item">PROJECTS </p>
-                                <div class="dropdown-content">
-                                    <nuxt-link to="/upside-of-uncertainty" class="menu-item" exact-active-class="active"><p>Upside of Uncertainty</p></nuxt-link>
-                                    <nuxt-link to="/earnest-project" exact-active-class="active"><p>Earnest Project</p></nuxt-link>
-                                    <nuxt-link to="/affection-economy" exact-active-class="active"><p>Affection Economy</p></nuxt-link>
-                                    <nuxt-link to="/hope-accelerator" exact-active-class="active"><p>Hope Accelerator</p></nuxt-link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="header-cont" :style="{ backgroundColor: headerColor }">
+    <div class="header">
+      <div class="flex flex-row align-center">
+        <div class="w-618 borderbox ph4">
+          <a href="/" exact-active-class="active"
+            ><p class="logo" :style="{ color: logoColor }">UP School</p></a
+          >
         </div>
+        <div :style="{ backgroundColor: navColor }" class="w-382 borderbox ph2">
+          <div class="flex flex-row space-between menu">
+            <div class="flex flex-row info-menu">
+              <nuxt-link
+                to="/articles"
+                class="menu-item"
+                exact-active-class="active"
+                :style="{ color: textColor }"
+                ><p>ARTICLES</p></nuxt-link
+              >
+              <nuxt-link
+                to="/events"
+                class="menu-item"
+                exact-active-class="active"
+                :style="{ color: textColor }"
+                ><p>EVENTS</p></nuxt-link
+              >
+              <nuxt-link
+                to="/contact"
+                class="menu-item"
+                exact-active-class="active"
+                :style="{ color: textColor }"
+                ><p>CONTACT</p></nuxt-link
+              >
+            </div>
+            <div>
+              <div class="dropdown">
+                <p class="menu-item" :style="{ color: textColor }">PROJECTS</p>
+                <div class="dropdown-content">
+                  <nuxt-link
+                    to="/upside-of-uncertainty"
+                    class="menu-item"
+                    exact-active-class="active"
+                    ><p>Upside of Uncertainty</p></nuxt-link
+                  >
+                  <nuxt-link to="/earnest-project" exact-active-class="active"
+                    ><p>Earnest Project</p></nuxt-link
+                  >
+                  <nuxt-link to="/affection-economy" exact-active-class="active"
+                    ><p>Affection Economy</p></nuxt-link
+                  >
+                  <nuxt-link to="/hope-accelerator" exact-active-class="active"
+                    ><p>Hope Accelerator</p></nuxt-link
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup>
-const navColor = useNavHeader();
+const {
+  headerColor = "#ffffff",
+  textColor = "#ffffff",
+  navColor = "#005BE3",
+  logoColor = "#000000",
+} = defineProps(["headerColor", "textColor", "navColor", "logoColor"]);
 </script>

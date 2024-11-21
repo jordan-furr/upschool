@@ -1,7 +1,8 @@
 <template>
     <div>
+      <up-header />
         <div class="flex flex-row w-100">
-            <div class="w-50 flex flex-col ph4 borderbox">
+            <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Initiatives based on helping people live rewarding lives.</p>
                 </div>
@@ -25,8 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-50 img-half">
-
+            <div class="w-382 img-half">
             </div>
         </div>
         <div class="info-button-cont pl4">

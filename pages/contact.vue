@@ -1,7 +1,8 @@
 <template>
     <div class="contact-page">
+        <up-header />
         <div class="flex flex-row w-100">
-            <div class="w-50 flex flex-col ph4 borderbox">
+            <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Contact</p>
                 </div>
@@ -9,7 +10,7 @@
                     <p>You can reach us at info@upschool.org</p>
                 </div>
             </div>
-            <div class="w-50 img-half">
+            <div class="w-382 img-half">
 
             </div>
         </div>
@@ -18,12 +19,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { useNavHeader } from '~/composables/useNavHeader';
-
-const color = ref('#ff1797');
-const navColor = useNavHeader();
-navColor.value = color.value;
-
-</script>

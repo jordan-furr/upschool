@@ -1,7 +1,8 @@
 <template>
     <div class="earnest-page">
+        <up-header :logoColor="'yellow'" :headerColor="'orange'" :textColor="'yellow'" :navColor="'orange'" />
         <div class="flex flex-row w-100">
-            <div class="w-50 flex flex-col ph4 borderbox">
+            <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Earnest Project</p>
                 </div>
@@ -11,8 +12,7 @@
                     <a href="https://earnestproject.com/" target="_blank"><p class="view-text">View --></p></a>
                 </div>
             </div>
-            <div class="w-50 img-half">
-
+            <div class="w-382 img-half">
             </div>
         </div>
         <div class="info-button-cont pl4">
@@ -20,12 +20,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { useNavHeader } from '~/composables/useNavHeader';
-
-const color = ref('#DD7D4E');
-const navColor = useNavHeader();
-navColor.value = color.value;
-
-</script>

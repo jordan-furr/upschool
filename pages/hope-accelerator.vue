@@ -1,5 +1,6 @@
 <template>
     <div class="hope-page">
+        <up-header />
         <div class="flex flex-row w-100">
             <div class="w-50 flex flex-col ph4 borderbox">
                 <div class="landing">
@@ -19,12 +20,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { useNavHeader } from '~/composables/useNavHeader';
-
-const color = ref('#4a2203');
-const navColor = useNavHeader();
-navColor.value = color.value;
-
-</script>

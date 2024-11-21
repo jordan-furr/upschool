@@ -1,7 +1,8 @@
 <template>
     <div class="events-page">
+        <up-header />
         <div class="flex flex-row w-100">
-            <div class="w-50 flex flex-col ph4 borderbox">
+            <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Events</p>
                 </div>
@@ -16,7 +17,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-50 img-half">
+            <div class="w-382 img-half">
 
             </div>
         </div>
@@ -25,12 +26,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { useNavHeader } from '~/composables/useNavHeader';
-
-const color = ref('#ffd817');
-const navColor = useNavHeader();
-navColor.value = color.value;
-
-</script>
