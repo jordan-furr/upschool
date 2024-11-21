@@ -1,6 +1,6 @@
 <template>
     <div class="earnest-page">
-        <up-header :logoColor="'yellow'" :headerColor="'orange'" :textColor="'yellow'" :navColor="'orange'" />
+        <up-header :logoColor="'#fcff5e'" :headerColor="'#DD7D4E'" :textColor="'#fcff5e'" :navColor="'#DD7D4E'" />
         <div class="flex flex-row w-100">
             <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
@@ -13,6 +13,9 @@
                 </div>
             </div>
             <div class="w-382 img-half">
+                <div class="w-618 flex margin-a align-center page-height">
+                    <img class="w-100" src="/assets/Earnest Patch.png" alt="">
+                </div>
             </div>
         </div>
         <div class="info-button-cont pl4">

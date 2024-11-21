@@ -1,8 +1,8 @@
 <template>
     <div class="affection-page">
-        <up-header />
+        <up-header :logoColor="'white'" :headerColor="'#91c493'" :textColor="'white'" :navColor="'#91c493'" />
         <div class="flex flex-row w-100">
-            <div class="w-50 flex flex-col ph4 borderbox">
+            <div class="page-content w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Affection Economy</p>
                 </div>
@@ -11,7 +11,7 @@
                     <p>Working from a place of affection (for what you do and who you are doing it with and for) where dignity, good will and care are reciprocated.</p>
                 </div>
             </div>
-            <div class="w-50 img-half">
+            <div class="w-382 img-half">
 
             </div>
         </div>

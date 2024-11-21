@@ -718,6 +718,10 @@ a:hover {
     height: calc(100vh - 46px);
 }
 
+.page-height {
+    height: calc(100vh - 46px);
+}
+
 .bg-blue {
     background-color: var(--blue);
 }
@@ -848,8 +852,8 @@ a:hover {
 
 .landing {
     box-sizing: border-box;
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .landing p {
@@ -963,11 +967,31 @@ a:hover {
 }
 
 .earnest-page {
-    background-color: antiquewhite;
+    background-color: #f0e4c9;
 }
 
 .hope-page {
-    background-color: wheat;
+    background-color: #42270f;
+}
+
+.hope-page p {
+    color: #ddedf0;
+}
+
+.affection-page {
+    background-color: #876220;
+}
+
+.affection-page p {
+    color: white;
+}
+
+.upside-page {
+    background-color: #0C3F41;
+}
+
+.upside-page p {
+    color: #C9FFAF;
 }
 
 @media (max-width: 1000px) {

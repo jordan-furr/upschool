@@ -1,8 +1,8 @@
 <template>
     <div class="upside-page">
-        <up-header />
+        <up-header :logoColor="'#C9FFAF'" :headerColor="'#0C3F41'" :textColor="'#C9FFAF'" :navColor="'#0C3F41'" />
         <div class="flex flex-row w-100">
-            <div class="w-50 flex flex-col ph4 borderbox">
+            <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>The Upside of Uncertainty</p>
                 </div>
@@ -13,7 +13,7 @@
                     
                 </div>
             </div>
-            <div class="w-50 img-half">
+            <div class="w-382 img-half">
 
             </div>
         </div>

@@ -1,8 +1,8 @@
 <template>
     <div class="hope-page">
-        <up-header :logoColor="'yellow'" :headerColor="'brown'" :textColor="'yellow'" :navColor="'brown'" />
+        <up-header :logoColor="'#ddedf0'" :headerColor="'#07252b'" :textColor="'#ddedf0'" :navColor="'#07252b'" />
         <div class="flex flex-row w-100">
-            <div class="w-50 flex flex-col ph4 borderbox">
+            <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">
                     <p>Hope Accelerator</p>
                 </div>
@@ -11,7 +11,7 @@
                     <p>Working from a place of affection (for what you do and who you are doing it with and for) where dignity, good will and care are reciprocated.</p>
                 </div>
             </div>
-            <div class="w-50 img-half">
+            <div class="w-382 img-half">
 
             </div>
         </div>
