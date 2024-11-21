@@ -966,6 +966,10 @@ a:hover {
     background-color: antiquewhite;
 }
 
+.hope-page {
+    background-color: wheat;
+}
+
 @media (max-width: 1000px) {
     .header p {
         font-size: 15px;

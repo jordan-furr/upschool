@@ -1,6 +1,6 @@
 <template>
     <div class="hope-page">
-        <up-header />
+        <up-header :logoColor="'yellow'" :headerColor="'brown'" :textColor="'yellow'" :navColor="'brown'" />
         <div class="flex flex-row w-100">
             <div class="w-50 flex flex-col ph4 borderbox">
                 <div class="landing">
