@@ -4,9 +4,11 @@
 :root {
     --blue: #005BE3;
     --miblue: #52B6FF;
-    --yellow: #fcff5e;
+    --oyellow: #fcff5e;
+    --yellow: #FBE481;
     --green: #70D884;
     --orange: #DD7D4E;
+    --upgreen: #11935e;
 }
 
 html,
@@ -747,8 +749,8 @@ a:hover {
 }
 
 .menu-item {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     letter-spacing: 0.03rem;
     color: white;
     padding-left: 18px;
@@ -759,16 +761,15 @@ a:hover {
 }
 
 .alt-header {
-    border-bottom: 1px solid #70D884;
-    padding: 16px 0;
+    border-bottom: 2px solid #70D884;
+    padding: 14px 0;
 }
 
 .alt-menu-item {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     letter-spacing: 0.03rem;
     color: black;
-    padding: 16px 0px;
     font-family: 'Spectral';
     box-sizing: border-box;
 }
@@ -815,14 +816,14 @@ a:hover {
 
 .dropdown-content p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14.5px;
     letter-spacing: 0.03rem;
 }
 
 .dropdown-content a {
     float: none;
     color: white;
-    padding-left: 14px;
+    padding-left: 18px;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 24px;
@@ -840,38 +841,38 @@ a:hover {
 }
 
 .img-half {
-    background-image: url('/assets/up-school-earnest-uncertainty.jpeg');
+    background-image: url('/assets/up-school-earnest-uncertainty.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
 .earnest-page .img-half {
-    background-image: url('/assets/earnest.jpeg');
+    background-image: url('/assets/earnest.webp');
 }
 
 .affection-page .img-half {
-    background-image: url('/assets/affection-economy.jpeg');
+    background-image: url('/assets/articles.webp');
 }
 
 .hope-page .img-half {
-    background-image: url('/assets/hope.png');
+    background-image: url('/assets/hope.webp');
 }
 
 .contact-page .img-half {
-    background-image: url('/assets/contact.png');
+    background-image: url('/assets/contact.webp');
 }
 
 .events-page .img-half {
-    background-image: url('/assets/events.jpeg');
+    background-image: url('/assets/events.webp');
 }
 
 .upside-page .img-half {
-    background-image: url('/assets/upside-uncertainty.jpeg');
+    background-image: url('/assets/theupside.webp');
 }
 
 .articles-page .img-half {
-    background-image: url('/assets/articles.jpeg');
+    background-image: url('/assets/articles.webp');
 }
 
 .landing {
@@ -977,12 +978,30 @@ a:hover {
     color: black;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
+    text-underline-offset: 5px;
     text-decoration-color: var(--blue);
 }
 
 .view-text:hover {
     color: var(--blue);
+}
+
+.view-text.earnest{
+    color: white;
+    text-decoration-color: var(--yellow);
+}
+
+.view-text.earnest:hover {
+    color: var(--yellow);
+}
+
+.view-text.upside {
+    text-decoration-color: var(--upgreen);
+    color: #C9FFAF;
+}
+
+.view-text.upside:hover {
+    color: var(--upgreen);
 }
 
 .past-ev {
@@ -991,7 +1010,7 @@ a:hover {
 }
 
 .earnest-page {
-    background-color: #FACAC5;
+    background-color: var(--orange);
 }
 
 .hope-page {
@@ -1002,12 +1021,12 @@ a:hover {
     color: #ddedf0;
 }
 
-.affection-page {
-    background-color: #ffd036;
+.earnest-page .page-content p {
+    color: #fff;
 }
 
-.affection-page .page-content p {
-    color: #03301a;
+.affection-page {
+    background-color: #F4AA6D;
 }
 
 .upside-page {

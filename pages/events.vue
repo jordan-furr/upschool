@@ -1,6 +1,6 @@
 <template>
     <div class="events-page">
-        <alt-header :title="'EVENTS'" />
+        <alt-header :title="'Events'" />
         <div class="text-center event-content">
             <div class="about-text margin-a">
                 <div class="upcoming-ev">

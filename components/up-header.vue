@@ -15,26 +15,26 @@
                 class="menu-item"
                 exact-active-class="active"
                 :style="{ color: textColor }"
-                ><p>ARTICLES</p></nuxt-link
+                ><p>Articles</p></nuxt-link
               >
               <nuxt-link
                 to="/events"
                 class="menu-item"
                 exact-active-class="active"
                 :style="{ color: textColor }"
-                ><p>EVENTS</p></nuxt-link
+                ><p>Events</p></nuxt-link
               >
               <nuxt-link
                 to="/contact"
                 class="menu-item"
                 exact-active-class="active"
                 :style="{ color: textColor }"
-                ><p>CONTACT</p></nuxt-link
+                ><p>Contact</p></nuxt-link
               >
             </div>
             <div>
               <div class="dropdown">
-                <p class="menu-item" :style="{ color: textColor }">PROJECTS</p>
+                <p class="menu-item" :style="{ color: textColor }">Projects</p>
                 <div class="dropdown-content">
                   <nuxt-link
                     to="/upside-of-uncertainty"

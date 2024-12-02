@@ -1,6 +1,6 @@
 <template>
     <div class="affection-page">
-        <up-header :logoColor="'#03301a'" :headerColor="'#eda737'" :textColor="'#03301a'" :navColor="'#eda737'" />
+        <up-header :logoColor="'#fff'" :headerColor="'#BA3F2D'" :textColor="'#fff'" :navColor="'#BA3F2D'" />
         <div class="flex flex-row w-100 page-content">
             <div class="w-618 flex flex-col ph4 borderbox">
                 <div class="landing">

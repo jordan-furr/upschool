@@ -13,7 +13,7 @@
                     </nuxt-link>
                 </div>
                 <div class="w-33 text-right">
-                    <nuxt-link to="/" class="alt-menu-item">
+                    <nuxt-link to="/">
                         <p>&#10005;</p>
                     </nuxt-link>
                 </div>
@@ -24,6 +24,6 @@
 
 <script setup>
 const {
-    title = "ARTICLES",
+    title = "Articles",
 } = defineProps(["title"]);
 </script>
