@@ -765,6 +765,15 @@ a:hover {
     padding: 14px 0;
 }
 
+.info-header {
+    background-color: #005BE3;
+    padding: 14px 0;
+}
+
+.info-menu-item {
+    color: white;
+}
+
 .alt-menu-item {
     font-size: 20px;
     font-weight: 400;
@@ -1043,6 +1052,19 @@ a:hover {
 
 .event-content {
     margin-top: 3rem;
+}
+
+.info-page {
+    background-color: #005BE3;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+
+.info-page p {
+    color: white;
+    font-size: 24px;
+    line-height: 1.2;
 }
 
 @media (max-width: 1000px) {
