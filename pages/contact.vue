@@ -1,6 +1,6 @@
 <template>
     <div class="contact-page">
-        <alt-header :title="'CONTACT'" />
+        <alt-header :title="'Contact'" />
         <div class="text-center event-content">
             <div class="about-text margin-a">
                 <p>You can reach us at info@upschool.org</p>
