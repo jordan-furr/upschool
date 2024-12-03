@@ -1,10 +1,12 @@
 <template>
   <div class="home-page">
     <up-header />
-    <div class="flex flex-row w-100">
-      <div class="w-618 flex flex-col ph4 borderbox">
+    <div class="flex flex-row w-100 home-row">
+      <div class="w-618 flex flex-col ph4 borderbox big-half">
         <div class="landing">
           <p>Initiatives based on helping people live rewarding lives.</p>
+        </div>
+        <div class="img-half mobile">
         </div>
         <div>
           <p class="nav-text">PROJECTS</p>
@@ -26,7 +28,8 @@
           </div>
         </div>
       </div>
-      <div class="w-382 img-half">
+      <div class="w-382 img-half desktop small-half">
+        <div class="page-height"></div>
       </div>
     </div>
     <div class="info-button-cont page-content">

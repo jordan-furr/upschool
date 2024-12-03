@@ -1,10 +1,12 @@
 <template>
     <div class="upside-page">
         <up-header :logoColor="'#C9FFAF'" :headerColor="'#11935e'" :textColor="'#C9FFAF'" :navColor="'#11935e'" />
-        <div class="flex flex-row w-100 page-content">
-            <div class="w-618 flex flex-col ph4 borderbox">
+        <div class="flex flex-row w-100 page-content home-row">
+            <div class="w-618 flex flex-col ph4 borderbox big-half">
                 <div class="landing">
                     <p>The Upside of Uncertainty</p>
+                </div>
+                <div class="w-382 img-half mobile">
                 </div>
                 <div class="about-text">
                     <p>Uncertainty ability is an essential skillset for our evolving world. Training for individuals and
@@ -16,7 +18,7 @@
 
                 </div>
             </div>
-            <div class="w-382 img-half">
+            <div class="w-382 img-half desktop small-half">
                 <div class="w-50 flex margin-a align-center page-height">
                     <img class="w-100" src="/assets/upsideofuncertaintycover.webp" alt="">
                 </div>

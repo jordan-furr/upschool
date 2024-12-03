@@ -26,7 +26,7 @@ body {
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 p {
@@ -747,7 +747,7 @@ a:hover {
 }
 
 .page {
-    height: calc(100vh - 54px);
+    min-height: calc(100vh - 54px);
 }
 
 .page-height {
@@ -769,6 +769,7 @@ a:hover {
 .logo {
     font-size: 24px;
     font-weight: 600;
+    padding: 18px 0;
     letter-spacing: 0.03rem;
     font-family: 'Spectral';
     color: black;
@@ -788,12 +789,11 @@ a:hover {
 
 .alt-header {
     border-bottom: 2px solid #70D884;
-    padding: 18px 0;
 }
 
 .info-header {
     background-color: #005BE3;
-    padding: 24px 0;
+    padding: 6px 0;
 }
 
 .info-menu-item {
@@ -880,7 +880,13 @@ a:hover {
     background-image: url('/assets/up-school-earnest-uncertainty.webp');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
+}
+
+.img-half.mobile {
+    height: 900px !important;
+    width: auto;
+    margin-bottom: 1.5rem;
 }
 
 .earnest-page .img-half {
@@ -915,6 +921,10 @@ a:hover {
     box-sizing: border-box;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.home-page .landing {
+    margin-bottom: 4rem;
 }
 
 .landing p {
@@ -963,12 +973,12 @@ a:hover {
 }
 
 .plus-icon {
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 42px;
+    font-weight: 700;
     cursor: pointer;
     transform-origin: center;
     transition: transform 0.2s ease;
-    color: var(--orange);
+    color: var(--miblue);
 }
 
 .projects-home .active {
@@ -1174,8 +1184,98 @@ a:hover {
     top: 15px;
 }
 
+@media (max-width: 1200px) {
+    .big-half {
+        width: 50%
+    }
+    .small-half {
+        width: 50%;
+    }
+    .home-page .landing p {
+        font-size: 54px;
+        line-height: 60px;
+    }
+    .landing {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .menu-item {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 1000px) {
-    .header p {
-        font-size: 15px;
+    .landing p {
+        font-size: 62px;
+        line-height: 68px;
+    }
+}
+
+@media (max-width: 920px) {
+    .landing p {
+        font-size: 54px;
+        line-height: 60px;
+    }
+    .home-page .landing p {
+        font-size: 48px;
+        line-height: 54px;
+    }
+}
+
+@media (max-width: 815px) {
+    .home-row {
+        flex-direction: column;
+    }
+    .big-half {
+        width: 100%;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    .landing p {
+        font-size: 62px;
+        line-height: 68px;
+    }
+    .home-page .landing p {
+        font-size: 62px;
+        line-height: 68px;
+    }
+    .mobile-hide {
+        display: none;
+    }
+    .header .mobile-menu {
+        padding-right: 1.5rem;
+    }
+    .alt-header .mobile-menu {
+        color: black;
+    }
+    .mobile-66 {
+        width: 66%;
+    }
+    .info-button-cont {
+        display: none;
+    }
+    .img-half.desktop {
+        display: none;
+    }
+    .landing {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem !important;
+    }
+    .nav-text {
+        font-size: 20px;
+    }
+    .home-row {
+        box-sizing: border-box;
+        padding-bottom: 5rem !important;
+    }
+}
+
+@media (min-width: 816px) {
+    .mobile-menu {
+        display: none;
+    }
+    .img-half.mobile {
+        display: none;
     }
 }

@@ -1,10 +1,12 @@
 <template>
     <div class="hope-page">
         <up-header :logoColor="'#fff'" :headerColor="'#07252b'" :textColor="'#fff'" :navColor="'#07252b'" />
-        <div class="flex flex-row w-100 page-content">
-            <div class="w-618 flex flex-col ph4 borderbox">
+        <div class="flex flex-row w-100 page-content home-row">
+            <div class="w-618 flex flex-col ph4 borderbox big-half">
                 <div class="landing">
                     <p>Hope Accelerator</p>
+                </div>
+                <div class="w-382 img-half mobile">
                 </div>
                 <div class="about-text">
                     <p>Accelerating hope in the world.</p>
@@ -12,7 +14,8 @@
                         dignity, good will and care are reciprocated.</p>
                 </div>
             </div>
-            <div class="w-382 img-half">
+            <div class="w-382 img-half desktop small-half">
+                <div class="page-height"></div>
             </div>
         </div>
         <div class="info-button-cont page-content">

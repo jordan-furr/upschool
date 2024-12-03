@@ -1,13 +1,14 @@
 <template>
   <div class="header-cont" :style="{ backgroundColor: headerColor }">
     <div class="header">
-      <div class="flex flex-row align-center">
-        <div class="w-618 borderbox ph4">
+      <div class="flex flex-row align-center space-between">
+        <div class="w-618 borderbox ph4 big-half">
           <a href="/" exact-active-class="active"
             ><p class="logo" :style="{ color: logoColor }">UP School</p></a
           >
         </div>
-        <div :style="{ backgroundColor: navColor }" class="w-382 borderbox pl2 pr4">
+        <div class="mobile-menu menu-item" :style="{ color: logoColor }">Menu</div>
+        <div :style="{ backgroundColor: navColor }" class="w-382 borderbox pl2 pr4 desktop-menu small-half">
           <div class="flex flex-row space-between">
             <div class="flex flex-row">
               <nuxt-link
