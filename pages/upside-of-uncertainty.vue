@@ -22,7 +22,7 @@
         </div>
         <div class="info-button-cont pl4 page-content">
             <nuxt-link to="/info">
-                <p class="nav-text blue-hover">INFO</p>
+                <p class="info-button">INFO</p>
             </nuxt-link>
         </div>
     </div>

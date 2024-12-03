@@ -4,8 +4,8 @@
 :root {
     --blue: #005BE3;
     --miblue: #52B6FF;
-    --oyellow: #fcff5e;
-    --yellow: #FBE481;
+    --yellow: #fcff5e;
+    --oyellow: #FBE481;
     --green: #70D884;
     --orange: #DD7D4E;
     --upgreen: #11935e;
@@ -20,7 +20,7 @@ body {
     font-size: 18px;
     line-height: 18px;
     font-family: Arimo, Helvetica, Arial, sans-serif;
-    scroll-behavior: smooth !important;
+    scroll-behavior: auto;
 }
 
 body {
@@ -59,10 +59,12 @@ h6 {
 }
 
 .flex-row {
+    display: flex;
     flex-direction: row;
 }
 
 .flex-col {
+    display: flex;
     flex-direction: column;
 }
 
@@ -347,6 +349,18 @@ h6 {
     padding-right: 1.5rem;
 }
 
+.pr5 {
+    padding-right: 2rem;
+}
+
+.pr6 {
+    padding-right: 3rem;
+}
+
+.pr7 {
+    padding-right: 4rem;
+}
+
 .pt1 {
     padding-top: 0.25rem;
 }
@@ -357,10 +371,6 @@ h6 {
 
 .pt3 {
     padding-top: 1rem;
-}
-
-.pt4 {
-    padding-top: 1.5rem;
 }
 
 .ph1 {
@@ -447,6 +457,22 @@ h6 {
 
 .pb4 {
     padding-bottom: 1.5rem;
+}
+
+.pb5 {
+    padding-bottom: 2rem;
+}
+
+.pb6 {
+    padding-bottom: 3rem;
+}
+
+.pb7 {
+    padding-bottom: 4rem;
+}
+
+.pb8 {
+    padding-bottom: 5rem;
 }
 
 .ma1 {
@@ -755,19 +781,20 @@ a:hover {
     color: white;
     padding-left: 18px;
     padding-right: 0px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: 'Spectral';
 }
 
 .alt-header {
     border-bottom: 2px solid #70D884;
-    padding: 14px 0;
+    padding: 16px 0;
 }
 
 .info-header {
     background-color: #005BE3;
-    padding: 14px 0;
+    border-bottom: 2px solid white;
+    padding: 16px 0;
 }
 
 .info-menu-item {
@@ -997,11 +1024,11 @@ a:hover {
 
 .view-text.earnest{
     color: white;
-    text-decoration-color: var(--yellow);
+    text-decoration-color: var(--oyellow);
 }
 
 .view-text.earnest:hover {
-    color: var(--yellow);
+    color: var(--oyellow);
 }
 
 .view-text.upside {
@@ -1065,6 +1092,53 @@ a:hover {
     color: white;
     font-size: 24px;
     line-height: 1.2;
+    font-weight: 300;
+    font-family: 'Inter';
+}
+
+.info-sub {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.03rem;
+    font-family: 'Spectral' !important;
+    margin-bottom: 0.25rem;
+}
+
+.backpack-cont {
+    position: absolute;
+    right: 3rem;
+    top: 220px;
+}
+
+.backpack {
+    height: 400px;
+}
+
+.info-button {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    font-family: 'Spectral';
+}
+
+.info-link:hover{
+    color: #fcff5e;
+}
+
+.close-button {
+    background-color: #005BE3;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+}
+
+.x-box {
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    right: 1.5rem;
+    top: 7px;
 }
 
 @media (max-width: 1000px) {
