@@ -18,8 +18,10 @@
                 </div>
             </div>
         </div>
-        <div class="info-button-cont pl4 page-content">
-            <p class="nav-text blue-hover">INFO</p>
+        <div class="info-button-cont page-content">
+            <nuxt-link to="/info">
+                <p class="info-button">Info</p>
+            </nuxt-link>
         </div>
     </div>
 </template>

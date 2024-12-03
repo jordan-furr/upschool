@@ -11,18 +11,20 @@
                         teams.</p>
                     <p>The Upside of Uncertainty teaches uncertainty + possibility are two sides of the same coin.</p>
                     <a href="https://www.theupsideofuncertainty.com/" target="_blank">
-                        <p><span class="view-text upside">View --></span></p>
+                        <p><span class="view-text upside">View →</span></p>
                     </a>
 
                 </div>
             </div>
             <div class="w-382 img-half">
-
+                <div class="w-50 flex margin-a align-center page-height">
+                    <img class="w-100" src="/assets/upsideofuncertaintycover.webp" alt="">
+                </div>
             </div>
         </div>
-        <div class="info-button-cont pl4 page-content">
+        <div class="info-button-cont page-content">
             <nuxt-link to="/info">
-                <p class="info-button">INFO</p>
+                <p class="info-button">Info</p>
             </nuxt-link>
         </div>
     </div>

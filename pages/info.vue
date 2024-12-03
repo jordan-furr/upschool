@@ -60,16 +60,16 @@
             <img class="backpack" src="/assets/UPschool-backpack.webp" alt="">
         </div>
         <div class="info-button-cont pl4 page-content">
-            <p @click="goBack" class="close-button">CLOSE</p>
+
         </div>
-        <div class="x-box">
+        <div class="x-box info">
             <div>
-                <nuxt-link to="/">
+                <p @click="goBack" class="close-button">
                     <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                         <line x1="40.91" y1="6.97" x2="6.97" y2="40.91" stroke="white" stroke-width="2" />
                         <line x1="6.97" y1="6.97" x2="40.91" y2="40.91" stroke="white" stroke-width="2" />
                     </svg>
-                </nuxt-link>
+                </p>
             </div>
         </div>
     </div>

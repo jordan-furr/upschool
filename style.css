@@ -747,7 +747,7 @@ a:hover {
 }
 
 .page {
-    height: calc(100vh - 46px);
+    height: calc(100vh - 54px);
 }
 
 .page-height {
@@ -768,7 +768,7 @@ a:hover {
 
 .logo {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.03rem;
     font-family: 'Spectral';
     color: black;
@@ -776,25 +776,24 @@ a:hover {
 
 .menu-item {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.03rem;
     color: white;
     padding-left: 18px;
     padding-right: 0px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     font-family: 'Spectral';
 }
 
 .alt-header {
     border-bottom: 2px solid #70D884;
-    padding: 16px 0;
+    padding: 18px 0;
 }
 
 .info-header {
     background-color: #005BE3;
-    border-bottom: 2px solid white;
-    padding: 16px 0;
+    padding: 24px 0;
 }
 
 .info-menu-item {
@@ -812,7 +811,8 @@ a:hover {
 
 .info-button-cont {
     position: absolute;
-    bottom: 27px;
+    left: 1.5rem;
+    bottom: 1.5rem;
     z-index: 1;
 }
 
@@ -919,7 +919,7 @@ a:hover {
 
 .landing p {
     font-family: 'Spectral';
-    font-weight: 300;
+    font-weight: 500;
     font-size: 66px;
     line-height: 72px;
 }
@@ -1054,7 +1054,11 @@ a:hover {
 }
 
 .hope-page .page-content p {
-    color: #ddedf0;
+    color: #ddedf0 !important;
+}
+
+.hope-page .page-content .info-button:hover {
+    color: #C9FFAF !important;
 }
 
 .earnest-page .page-content p {
@@ -1065,12 +1069,36 @@ a:hover {
     background-color: #F4AA6D;
 }
 
+.affection-page .page-content .info-button:hover {
+    color: #BA3F2D !important;
+}
+
+.affection-page .page-content p {
+    color: black;
+}
+
 .upside-page {
     background-color: #0C3F41;
 }
 
 .upside-page .page-content p {
     color: #C9FFAF;
+}
+
+.upside-page .page-content .info-button:hover {
+    color: #11935e;
+}
+
+.earnest-page .page-content .info-button:hover {
+    color: var(--oyellow);
+}
+
+.home-page .page-content .info-button:hover {
+    color: #005BE3;
+}
+
+.home-page .page-content p {
+    color: black;
 }
 
 .article-content {
@@ -1116,7 +1144,7 @@ a:hover {
 
 .info-button {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.03rem;
     font-family: 'Spectral';
 }
@@ -1138,7 +1166,12 @@ a:hover {
     width: 36px;
     position: absolute;
     right: 1.5rem;
-    top: 7px;
+    top: 10px;
+}
+
+
+.x-box.alt {
+    top: 15px;
 }
 
 @media (max-width: 1000px) {

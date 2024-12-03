@@ -8,15 +8,17 @@
                 </div>
                 <div class="about-text">
                     <p>Accelerating hope in the world.</p>
-                    <p>Working from a place of affection (for what you do and who you are doing it with and for) where dignity, good will and care are reciprocated.</p>
+                    <p>Working from a place of affection (for what you do and who you are doing it with and for) where
+                        dignity, good will and care are reciprocated.</p>
                 </div>
             </div>
             <div class="w-382 img-half">
-
             </div>
         </div>
-        <div class="info-button-cont pl4 page-content">
-            <p class="nav-text blue-hover">INFO</p>
+        <div class="info-button-cont page-content">
+            <nuxt-link to="/info">
+                <p class="info-button" style="color: black;">Info</p>
+            </nuxt-link>
         </div>
     </div>
 </template>
