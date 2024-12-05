@@ -6,6 +6,11 @@
                 <div class="landing">
                     <p>Earnest Project</p>
                 </div>
+                <div class="img-half mobile">
+                    <div class="w-50 flex margin-a align-center mobile-icon-cont">
+                        <img class="w-100" src="/assets/Earnest Patch.webp" alt="">
+                    </div>
+                </div>
                 <div class="about-text">
                     <p>Can earnestness change the world? Our exploration begins here.</p>
                     <p>Earnest Project is a community and research initiative. Join us in the celebrating the joy of earnest living. </p>

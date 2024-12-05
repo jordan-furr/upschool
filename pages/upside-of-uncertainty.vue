@@ -6,7 +6,10 @@
                 <div class="landing">
                     <p>The Upside of Uncertainty</p>
                 </div>
-                <div class="w-382 img-half mobile">
+                <div class="img-half mobile">
+                    <div class="w-35 flex margin-a align-center mobile-icon-cont">
+                        <img class="w-100" src="/assets/upsideofuncertaintycover.webp" alt="">
+                    </div>
                 </div>
                 <div class="about-text">
                     <p>Uncertainty ability is an essential skillset for our evolving world. Training for individuals and
