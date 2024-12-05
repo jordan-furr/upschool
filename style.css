@@ -884,9 +884,25 @@ a:hover {
 }
 
 .img-half.mobile {
-    height: 900px !important;
+    height: 500px !important;
     width: auto;
     margin-bottom: 1.5rem;
+}
+
+.affection-page .img-half.mobile {
+    background-position: 50% 30% !important;
+}
+
+.hope-page .img-half.mobile {
+    background-position: 50% 30% !important;
+}
+
+.upside-page.img-half.mobile {
+    background-position: 50% 10%;
+}
+
+.mobile-icon-cont {
+    height: inherit;
 }
 
 .earnest-page .img-half {
@@ -1076,11 +1092,11 @@ a:hover {
 }
 
 .affection-page {
-    background-color: #F4AA6D;
+    background-color: #efdccd;
 }
 
 .affection-page .page-content .info-button:hover {
-    color: #BA3F2D !important;
+    color: #F4AA6D !important;
 }
 
 .affection-page .page-content p {
@@ -1233,12 +1249,12 @@ a:hover {
         display: none;
     }
     .landing p {
-        font-size: 62px;
-        line-height: 68px;
+        font-size: 78px;
+        line-height: 84px;
     }
     .home-page .landing p {
-        font-size: 62px;
-        line-height: 68px;
+        font-size: 74px;
+        line-height: 80px;
     }
     .mobile-hide {
         display: none;
@@ -1259,8 +1275,8 @@ a:hover {
         display: none;
     }
     .landing {
-        margin-top: 1.5rem;
-        margin-bottom: 1rem !important;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem !important;
     }
     .nav-text {
         font-size: 20px;
@@ -1277,5 +1293,65 @@ a:hover {
     }
     .img-half.mobile {
         display: none;
+    }
+}
+
+@media (max-width: 701px) {
+    .home-page .landing p {
+        font-size: 64px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 620px) {
+    .home-page .landing p {
+        font-size: 56px;
+        line-height: 62px;
+    }
+}
+
+@media (max-width: 580px) {
+    .landing p {
+        font-size: 68px;
+        line-height: 74px;
+    }
+    .home-page .landing p {
+        font-size: 50px;
+        line-height: 56px;
+    }
+}
+
+@media (max-width: 500px) {
+    .landing p {
+        font-size: 56px;
+        line-height: 62px;
+    }
+    .home-page .landing p {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 440px) {
+    .home-page .landing p {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .landing {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .landing p {
+        font-size: 50px;
+        line-height: 56px;
+    }
+}
+
+@media (max-width: 380px) {
+    .landing p {
+        font-size: 44px;
+        line-height: 48px;
     }
 }
