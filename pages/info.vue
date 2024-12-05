@@ -78,9 +78,7 @@
             </div>
         </div>
         <div class="subscribe-cont">
-            <div class="subscribe-box">
-                <p>subscribe</p>
-            </div>
+            <newsletter />
         </div>
     </div>
 </template>
