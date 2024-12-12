@@ -978,11 +978,12 @@ a:hover {
 }
 
 .project-content {
+    font-family: 'Arimo';
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
     padding: 0 10px;
-    padding-top: 14px;
+    padding-top: 16px;
     font-weight: 200;
     font-size: 16px;
 }
@@ -1217,19 +1218,30 @@ a:hover {
 
 .subscribe-form {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
     border: 2px solid white;
 }
 
+.email::placeholder{
+    color: white !important;
+    border: white;
+}
+
 .subscribe-form input {
     flex: 1;
+    width: 100%;
     padding: 10px;
     font-size: 18px;
     font-weight: 100;
     background-color: #005BE3;
     border: none;
-    border-right: 2px solid white;
+    border-right: 2px solid white !important;
     color: white;
+    box-sizing: border-box;
 }
 
 .subscribe-form button {
@@ -1240,11 +1252,26 @@ a:hover {
     background-color: #005BE3;
     border: none;
     cursor: pointer;
-  }
+    flex-shrink: 0;
+    white-space: nowrap;
+}
 
-  .subscribe-form button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
-  }
+.subscribe-form button:hover {
+    background-color: #fff;
+    color: #005BE3;
+}
+
+#mce-responses {
+    position: relative;
+    bottom: 10px;
+    color: white;
+}
+
+.subscribe-form input:focus {
+    outline: none; 
+    border: none;  
+}
+
 
 
 @media (max-width: 1200px) {
