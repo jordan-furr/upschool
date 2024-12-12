@@ -790,6 +790,26 @@ a:hover {
     font-family: 'Spectral';
 }
 
+.menu-icon .menu-item{
+    color: black;
+    z-index: 1000;
+}
+
+.menu-icon .menu-item:hover{
+    color: #005BE3;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--orange);
+    color: white;
+    z-index: 900;
+}
+
 .alt-header {
     border-bottom: 2px solid #70D884;
 }
