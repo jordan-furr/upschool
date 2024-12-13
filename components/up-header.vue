@@ -8,7 +8,7 @@
           </a>
         </div>
         <div class="mobile-menu">
-          <menu-icon :isOpen="isMenuVisible" :style="{ color: logoColor }" @click="toggleMenu" />
+          <menu-icon :style="{color: logoColor}" :isOpen="isMenuVisible" @click="toggleMenu" />
           <mobile-menu-overlay :isVisible="isMenuVisible" @click="toggleMenu" />
         </div>
         <div :style="{ backgroundColor: navColor }" class="w-382 borderbox pl2 pr4 desktop-menu small-half">
