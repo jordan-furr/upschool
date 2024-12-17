@@ -1,6 +1,6 @@
 <template>
     <div class="earnest-page">
-        <up-header :logoColor="'#000'" :headerColor="'#FBE481'" :textColor="'#000'" :navColor="'#FBE481'" />
+        <up-header :logoColor="'#fff'" :headerColor="'#d6b43e'" :textColor="'#fff'" :navColor="'#b4cdc2'" />
         <div class="flex flex-row w-100 page-content home-row">
             <div class="w-618 flex flex-col ph4 borderbox big-half">
                 <div class="landing">

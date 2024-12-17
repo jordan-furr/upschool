@@ -5,8 +5,8 @@
             <p class="info-sub white">PROJECTS</p>
             <nav @click.stop>
                 <ul>
-                    <li class="mt4">
-                        <nuxt-link to="/upside-of-uncertainty" class="menu-item" @click="closeMenu"
+                    <li class="mt3">
+                        <nuxt-link to="/upside-of-uncertainty" class="menu-item" @click="toggleMenu"
                             exact-active-class="active">
                             <p>Upside of Uncertainty</p>
                         </nuxt-link>
@@ -33,11 +33,11 @@
                 </ul>
             </nav>
             <br>
-            <nav @click.stop class="mt4">
+            <nav @click.stop class="mt3">
                 <ul>
                     <li>
-                        <nuxt-link to="/" class="menu-item" @click="closeMenu" exact-active-class="active">
-                            <p>Home</p>
+                        <nuxt-link to="/info" class="menu-item" @click="closeMenu" exact-active-class="active">
+                            <p>Info</p>
                         </nuxt-link>
                     </li>
                     <li>

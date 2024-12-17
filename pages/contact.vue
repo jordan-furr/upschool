@@ -6,8 +6,8 @@
                 <p>You can reach us at info@upschool.org</p>
             </div>
         </div>
-        <div class="info-button-cont pl4">
-            <p class="nav-text blue-hover">INFO</p>
+        <div class="subscribe-cont">
+            <newsletter />
         </div>
     </div>
 </template>

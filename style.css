@@ -789,8 +789,8 @@ a:hover {
     font-family: 'Spectral';
 }
 
-.menu-icon .menu-item{
-    z-index: 1000;
+.menu-icon {
+    z-index: 300;
 }
 
 .menu-overlay {
@@ -816,8 +816,8 @@ a:hover {
 .menu-overlay nav ul li a {
     color: white;
     padding: 0;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 24px;
 }
 
 .white {
@@ -826,7 +826,7 @@ a:hover {
 
 .menu-overlay-content{
     margin-left: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .mobile-x {
@@ -997,12 +997,13 @@ a:hover {
 }
 
 .projects-home {
-    margin-top: 0.5rem;
+    margin-top: .75rem;
+    box-sizing: border-box;
 }
 
 .project-item {
     border-bottom: 1px solid black;
-    padding: 18px 0 8px 0;
+    padding: 20px 0 12px 0;
     cursor: pointer;
     box-sizing: border-box;
     font-family: 'Spectral';
@@ -1013,11 +1014,15 @@ a:hover {
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 22px;
-    padding: 0 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03rem;
+    padding: 0;
+    padding-left: 10px;
     user-select: none;
+    font-family: 'Arimo';
+    color: #005BE3;
 }
 
 .project-content {
@@ -1026,9 +1031,13 @@ a:hover {
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
     padding: 0 10px;
-    padding-top: 16px;
+    padding-top: 18px;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.blue {
+    color: #005BE3;
 }
 
 .project-title span {
@@ -1037,11 +1046,11 @@ a:hover {
 
 .plus-icon {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
     transform-origin: center;
     transition: transform 0.2s ease;
-    color: var(--miblue);
+    color: var(--blue);
 }
 
 .projects-home .active {
@@ -1056,8 +1065,16 @@ a:hover {
     transform: rotate(90deg);
 }
 
-.project-title:hover .plus-icon {
+.project-item:hover .plus-icon {
     transform: rotate(90deg);
+}
+
+.project-item:hover .project-title {
+    color: black;
+}
+
+.project-item:active .project-title {
+    color: black;
 }
 
 .accordion-enter-active,
@@ -1127,11 +1144,11 @@ a:hover {
 }
 
 .hope-page .page-content p {
-    color: #ddedf0 !important;
+    color: #b4cdc2 !important;
 }
 
 .hope-page .page-content .info-button:hover {
-    color: #C9FFAF !important;
+    color: #71502f !important;
 }
 
 .earnest-page .page-content p {
@@ -1139,15 +1156,15 @@ a:hover {
 }
 
 .affection-page {
-    background-color: #efdccd;
+    background-color: #c19f2c;
 }
 
 .affection-page .page-content .info-button:hover {
-    color: #F4AA6D !important;
+    color: #f3a257 !important;
 }
 
 .affection-page .page-content p {
-    color: black;
+    color: #253122;
 }
 
 .upside-page {
@@ -1473,6 +1490,9 @@ a:hover {
         right: 1.5rem;
         top: 220px;
     }
+    .menu-item:hover {
+        color: inherit;
+    }
 }
 
 @media (min-width: 816px) {
@@ -1520,6 +1540,10 @@ a:hover {
 
     .info-page p {
         font-size: 18px;
+    }
+
+    .project-title {
+        font-size: 20px;
     }
 
 }

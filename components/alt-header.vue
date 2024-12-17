@@ -7,13 +7,14 @@
                         <p class="logo">UP School</p>
                     </a>
                 </div>
+                <div class="mobile-menu">
+                    <menu-icon :style="{ color: logoColor }" :isOpen="isMenuVisible" @click="toggleMenu" />
+                    <mobile-menu-overlay :isVisible="isMenuVisible" @click="toggleMenu" />
+                </div>
                 <div class="w-33 text-center mobile-hide">
                     <nuxt-link to="/articles" class="alt-menu-item">
                         <p>{{ title }}</p>
                     </nuxt-link>
-                </div>
-                <div class="mobile-menu menu-item">
-                    <p>Menu</p>
                 </div>
                 <div class="w-33 mobile-hide">
                     <div class="x-box">
@@ -33,7 +34,16 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 const {
     title = "Articles",
 } = defineProps(["title"]);
+
+const isMenuVisible = ref(false)
+
+const toggleMenu = () => {
+  isMenuVisible.value = !isMenuVisible.value
+}
 </script>
+

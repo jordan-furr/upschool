@@ -11,9 +11,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-const {
-    title = "Articles",
-} = defineProps(["title"]);
-</script>

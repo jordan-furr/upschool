@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-icon" @click="toggleMenu">
+  <div class="menu-icon">
     <span v-if="!isOpen">
       <p class="menu-item">Menu</p>
     </span>

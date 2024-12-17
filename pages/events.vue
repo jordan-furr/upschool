@@ -5,16 +5,19 @@
             <div class="about-text margin-a">
                 <div class="upcoming-ev">
                     <p class="sm-head-text">UPCOMING</p>
-                    <p>Please check back later. Subscribe to stay updated (we won't spam).</p>
+                    <p>Please check back later for 2025 events. Subscribe to stay updated.</p>
                 </div>
+                <!--
                 <div class="past-ev">
                     <p class="sm-head-text">PAST</p>
                     <p>Earnest Gathering, 2019</p>
                 </div>
+                -->
+                
             </div>
         </div>
-        <div class="info-button-cont pl4">
-            <p class="nav-text blue-hover">INFO</p>
+        <div class="subscribe-cont">
+            <newsletter />
         </div>
     </div>
 </template>
