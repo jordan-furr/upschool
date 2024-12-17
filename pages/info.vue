@@ -32,7 +32,7 @@
             </div>
             <div class="flex-row">
                 <div class="w-25 mobile-50">
-                    <div>
+                    <div class="pr3 borderbox">
                         <p class="info-sub">PROJECTS</p>
                         <nuxt-link to="/upside-of-uncertainty" exact-active-class="active">
                             <p class="info-link">Upside of Uncertainty</p>

@@ -13,8 +13,8 @@
         </div>
         <div class="projects-home">
           <div class="project-item" v-for="(item, index) in items" :key="index"
-            :class="{ 'active': activeIndex === index }">
-            <div class="project-title" @click="toggleAccordion(index)">
+            :class="{ 'active': activeIndex === index }" @click="toggleAccordion(index)">
+            <div class="project-title">
               <span>{{ item.title }}</span>
               <span :class="{ 'plus-icon': true, 'rotate-icon': activeIndex === index }">
                 +
@@ -22,7 +22,7 @@
             </div>
             <transition name="accordion">
               <div v-show="activeIndex === index" class="project-content">
-                <p>{{ item.content }}</p>
+                <p class="borderbox pr6 pb1">{{ item.content }}</p>
               </div>
             </transition>
           </div>
@@ -48,19 +48,19 @@ export default {
       items: [
         {
           title: "The Upside of Uncertainty",
-          content: "Detailed content about The Upside of Uncertainty..."
+          content: "A science-backed guide for navigating and thriving through uncertainty—based on interviews and insights from world-renowned leaders, innovators, entrepreneurs, artists, and creatives."
         },
         {
           title: "Earnest Project",
-          content: "Detailed content about the Earnest Project..."
+          content: "Can Earnestness change the world? Our exploration begins here. Our undertaking is to discover, interview, and highlight indivduals engaged in all kinds of earnest endeavors."
         },
         {
           title: "Affection Economy",
-          content: "Detailed content about the Affection Economy..."
+          content: "The Win Win Economy: Sustaining an ecosystem of care between leaders and team members."
         },
         {
           title: "Hope Accelerator",
-          content: "Detailed content about the Hope Accelerator..."
+          content: "Insights based on Natures biodynamic regenerative systems. A framework for solutions for the stripped ecosystems."
         }
       ]
     };

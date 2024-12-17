@@ -782,12 +782,55 @@ a:hover {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.03rem;
-    color: white;
     padding-left: 18px;
     padding-right: 0px;
     padding-top: 18px;
     padding-bottom: 18px;
     font-family: 'Spectral';
+}
+
+.menu-icon {
+    z-index: 300;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    z-index: 900;
+}
+
+.menu-overlay nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-overlay nav ul li {
+    margin-bottom: 0.25rem;
+}
+
+.menu-overlay nav ul li a {
+    color: white;
+    padding: 0;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.white {
+    color: white;
+}
+
+.menu-overlay-content{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.mobile-x {
+    z-index: 1000;
 }
 
 .alt-header {
@@ -954,12 +997,13 @@ a:hover {
 }
 
 .projects-home {
-    margin-top: 0.5rem;
+    margin-top: .75rem;
+    box-sizing: border-box;
 }
 
 .project-item {
     border-bottom: 1px solid black;
-    padding: 18px 0 8px 0;
+    padding: 20px 0 12px 0;
     cursor: pointer;
     box-sizing: border-box;
     font-family: 'Spectral';
@@ -970,21 +1014,30 @@ a:hover {
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 22px;
-    padding: 0 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03rem;
+    padding: 0;
+    padding-left: 10px;
     user-select: none;
+    font-family: 'Arimo';
+    color: #005BE3;
 }
 
 .project-content {
+    font-family: 'Arimo';
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
     padding: 0 10px;
-    padding-top: 14px;
+    padding-top: 18px;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.blue {
+    color: #005BE3;
 }
 
 .project-title span {
@@ -993,11 +1046,11 @@ a:hover {
 
 .plus-icon {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
     transform-origin: center;
     transition: transform 0.2s ease;
-    color: var(--miblue);
+    color: var(--blue);
 }
 
 .projects-home .active {
@@ -1012,8 +1065,16 @@ a:hover {
     transform: rotate(90deg);
 }
 
-.project-title:hover .plus-icon {
+.project-item:hover .plus-icon {
     transform: rotate(90deg);
+}
+
+.project-item:hover .project-title {
+    color: black;
+}
+
+.project-item:active .project-title {
+    color: black;
 }
 
 .accordion-enter-active,
@@ -1083,11 +1144,11 @@ a:hover {
 }
 
 .hope-page .page-content p {
-    color: #ddedf0 !important;
+    color: #b4cdc2 !important;
 }
 
 .hope-page .page-content .info-button:hover {
-    color: #C9FFAF !important;
+    color: #71502f !important;
 }
 
 .earnest-page .page-content p {
@@ -1095,15 +1156,15 @@ a:hover {
 }
 
 .affection-page {
-    background-color: #efdccd;
+    background-color: #c19f2c;
 }
 
 .affection-page .page-content .info-button:hover {
-    color: #F4AA6D !important;
+    color: #f3a257 !important;
 }
 
 .affection-page .page-content p {
-    color: black;
+    color: #253122;
 }
 
 .upside-page {
@@ -1217,19 +1278,30 @@ a:hover {
 
 .subscribe-form {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
     border: 2px solid white;
 }
 
+.email::placeholder{
+    color: white !important;
+    border: white;
+}
+
 .subscribe-form input {
     flex: 1;
+    width: 100%;
     padding: 10px;
     font-size: 18px;
     font-weight: 100;
     background-color: #005BE3;
     border: none;
-    border-right: 2px solid white;
+    border-right: 2px solid white !important;
     color: white;
+    box-sizing: border-box;
 }
 
 .subscribe-form button {
@@ -1240,11 +1312,26 @@ a:hover {
     background-color: #005BE3;
     border: none;
     cursor: pointer;
-  }
+    flex-shrink: 0;
+    white-space: nowrap;
+}
 
-  .subscribe-form button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
-  }
+.subscribe-form button:hover {
+    background-color: #fff;
+    color: #005BE3;
+}
+
+#mce-responses {
+    position: relative;
+    bottom: 10px;
+    color: white;
+}
+
+.subscribe-form input:focus {
+    outline: none; 
+    border: none;  
+}
+
 
 
 @media (max-width: 1200px) {
@@ -1403,6 +1490,9 @@ a:hover {
         right: 1.5rem;
         top: 220px;
     }
+    .menu-item:hover {
+        color: inherit;
+    }
 }
 
 @media (min-width: 816px) {
@@ -1450,6 +1540,10 @@ a:hover {
 
     .info-page p {
         font-size: 18px;
+    }
+
+    .project-title {
+        font-size: 20px;
     }
 
 }

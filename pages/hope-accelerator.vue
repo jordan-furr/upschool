@@ -1,6 +1,6 @@
 <template>
     <div class="hope-page">
-        <up-header :logoColor="'#fff'" :headerColor="'#051f33'" :textColor="'#fff'" :navColor="'#051f33'" />
+        <up-header :logoColor="'#b4cdc2'" :headerColor="'#8fa071'" :textColor="'#b4cdc2'" :navColor="'#71502f'" />
         <div class="flex flex-row w-100 page-content home-row">
             <div class="w-618 flex flex-col ph4 borderbox big-half">
                 <div class="landing">
