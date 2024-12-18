@@ -804,7 +804,7 @@ a:hover {
     z-index: 900;
 }
 
-.menu-overlay nav ul{
+.menu-overlay nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -825,7 +825,7 @@ a:hover {
     color: white;
 }
 
-.menu-overlay-content{
+.menu-overlay-content {
     margin-left: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -930,7 +930,7 @@ a:hover {
 }
 
 .img-half.mobile {
-    height: 500px !important;
+    height: 440px !important;
     width: auto;
     margin-bottom: 1.5rem;
 }
@@ -1284,7 +1284,7 @@ a:hover {
     border: 2px solid white;
 }
 
-.email::placeholder{
+.email::placeholder {
     color: white !important;
     border: white;
 }
@@ -1326,8 +1326,8 @@ a:hover {
 }
 
 .subscribe-form input:focus {
-    outline: none; 
-    border: none;  
+    outline: none;
+    border: none;
 }
 
 
@@ -1443,7 +1443,7 @@ a:hover {
     .home-row {
         box-sizing: border-box;
         padding-bottom: 1rem;
-        
+
     }
 
     .about-text {
@@ -1481,6 +1481,7 @@ a:hover {
     .backpack {
         width: 25vw;
     }
+
     .menu-item:hover {
         color: inherit;
     }
@@ -1511,7 +1512,7 @@ a:hover {
     .home-page .landing p {
         font-size: 56px;
     }
-    
+
 }
 
 @media (max-width: 580px) {
@@ -1530,23 +1531,29 @@ a:hover {
     .project-title {
         font-size: 20px;
     }
+
     .big-half {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
     .header .mobile-menu {
         padding-right: 1rem;
     }
+
     .ph3-mobile {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
     .nopad-mobile {
         padding: 0;
     }
+
     .backpack-cont {
         right: 1rem;
     }
+
     .subscribe-cont {
         padding-right: 1rem;
         padding-left: 1rem;
@@ -1561,6 +1568,11 @@ a:hover {
 
     .home-page .landing p {
         font-size: 42px;
+    }
+
+
+    .mobile-icon-cont {
+        width: 40%;
     }
 
 }
