@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="subscribe-cont">
-            <newsletter />
+            <white-newsletter />
         </div>
     </div>
 </template>

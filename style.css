@@ -817,8 +817,8 @@ a:hover {
 .menu-overlay nav ul li a {
     color: white;
     padding: 0;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .white {
@@ -827,7 +827,7 @@ a:hover {
 
 .menu-overlay-content {
     margin-left: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .mobile-x {
@@ -1282,11 +1282,35 @@ a:hover {
     width: 100%;
     align-items: center;
     border: 2px solid white;
+    font-family: 'Arimo';
+}
+
+.white-subscribe-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: 2px solid var(--blue);
+    font-family: 'Arimo';
 }
 
 .email::placeholder {
     color: white !important;
     border: white;
+}
+
+.white-subscribe-form .email::placeholder {
+    color: var(--blue) !important;
+    border: var(--blue);
+}
+
+input[type="email"] {
+    border-radius: 0; 
+    -webkit-appearance: none;
+    appearance: none;
+
 }
 
 .subscribe-form input {
@@ -1302,6 +1326,19 @@ a:hover {
     box-sizing: border-box;
 }
 
+.white-subscribe-form input {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: white;
+    border: none;
+    border-right: 2px solid var(--blue) !important;
+    color: var(--blue);
+    box-sizing: border-box;
+}
+
 .subscribe-form button {
     padding: 10px;
     font-size: 18px;
@@ -1314,9 +1351,26 @@ a:hover {
     white-space: nowrap;
 }
 
+.white-subscribe-form button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 100 !important;
+    color: var(--blue);
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
 .subscribe-form button:hover {
     background-color: #fff;
     color: #005BE3;
+}
+
+.white-subscribe-form button:hover {
+    background-color: var(--blue);
+    color: white;
 }
 
 #mce-responses {
@@ -1328,6 +1382,9 @@ a:hover {
 .subscribe-form input:focus {
     outline: none;
     border: none;
+    border-radius: 0; 
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 
@@ -1525,7 +1582,8 @@ a:hover {
     }
 
     .info-page p {
-        font-size: 18px;
+        font-size: 19px;
+        line-height: 1.2;
     }
 
     .project-title {
@@ -1557,6 +1615,11 @@ a:hover {
     .subscribe-cont {
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+
+    .menu-overlay-content {
+        margin-left: 1rem;
+        margin-top: 1rem;
     }
 
 }
