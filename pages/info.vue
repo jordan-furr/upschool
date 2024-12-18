@@ -1,39 +1,53 @@
 <template>
     <div class="h-100">
         <info-header />
-        <div class="info-page ph4 flex-col">
-            <div class="flex-row pb6 borderbox info-row">
-                <div class="w-25 mobile-100 pb5 flex-row ">
-                    <div class="w-75 mobile-50">
-                        <p>Research and education initiative based online and in Paris, France.</p>
-                    </div>
-
-                    <div class="w-25 desktop-hide mobile-50 text-right">
-                        <div>
-                            <a href="mailto:info@upschool.org">
-                                <p><span class="info-link">info@upschool.org</span></p>
-                            </a>
-
+        <div class="info-page ph4 flex-col ph3-mobile">
+            <div class="flex-row borderbox info-row space-between w-100">
+                <div class="w-33 mobile-100">
+                    <div class="flex-row space-between">
+                        <div class="w-100 mobile-50 mb6">
+                            <p>An online and Paris based education initiative that builds community and resources
+                                through
+                                exploration of uncertainty, living by values, and wellbeing in work and life.</p>
+                        </div>
+                        <div class="w-50 desktop-hide text-right">
+                            <div>
+                                <a href="mailto:info@upschool.org">
+                                    <p><span class="info-link">info@upschool.org</span></p>
+                                </a>
+                                <a href="https://www.instagram.com/upside.school" target="_">
+                                    <p><span class="info-link">Instagram</span></p>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <div class="w-100 mobile-50 mb6">
+                        <p>UP School was founded in 2020 by Susannah and Nathan FURR, out of a desire to seek
+                            answers to
+                            problems of navigating uncertainty, passion, work, and relationships.</p>
+                    </div>
                 </div>
-                <div class="w-25 mobile-50 pb5">
-                    <div class="w-100">
-                        <p>Led by Susannah HARMON FURR, art historian and entrepreneur, and Nathan FURR, professor of
-                            strategy at INSEAD.</p>
+                <div class="w-20 mobile-hide">
+                    <div>
+                        <a href="mailto:info@upschool.org">
+                            <p><span class="info-link">info@upschool.org</span></p>
+                        </a>
+                        <a href="https://www.instagram.com/upside.school" target="_">
+                            <p><span class="info-link">Instagram</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-25 mobile-100 mb6 mobile-hide">
+                    <div class="mobile-100 pb3 text-right">
+                        <p>"Friends, every day do something that won’t compute." Wendell Berry.</p>
+                    </div>
+                </div>
 
-                    </div>
-                </div>
-                <div class="w-50 mobile-100 pb3 mobile-hide">
-                    <div class="w-60 float-right">
-                        <p>So, friends, every day do something that won’t compute. Wendell Berry.</p>
-                    </div>
-                </div>
             </div>
-            <div class="flex-row">
-                <div class="w-25 mobile-50">
-                    <div class="pr3 borderbox">
-                        <p class="info-sub">PROJECTS</p>
+            <div class="w-100 flex-row mb6">
+                <div class="mobile-50">
+                    <div class="pr3 borderbox nopad-mobile">
+                        <p>Projects</p>
                         <nuxt-link to="/upside-of-uncertainty" exact-active-class="active">
                             <p class="info-link">Upside of Uncertainty</p>
                         </nuxt-link>
@@ -51,21 +65,24 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class="w-25 mobile-hide">
-                    <div>
-                        <a href="mailto:info@upschool.org">
-                            <p><span class="info-link">info@upschool.org</span></p>
+            </div>
+            <div class="w-100 flex-row mb6">
+                <div class="mobile-50">
+                    <div class="pr3 borderbox nopad-mobile">
+                        <p>Design</p>
+                        <a href="https://badtaste.dev/">
+                            <p><span class="info-link">Bad Taste</span></p>
                         </a>
-
+                        <p>Ezra Geo</p>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="backpack-cont">
             <img class="backpack" src="/assets/UPschool-backpack.webp" alt="">
         </div>
         <div class="info-button-cont pl4 page-content">
-
         </div>
         <div class="x-box info">
             <div>

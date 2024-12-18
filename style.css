@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 1.15;
     font-family: Arimo, Helvetica, Arial, sans-serif;
     scroll-behavior: auto;
 }
@@ -780,6 +780,7 @@ a:hover {
 
 .menu-item {
     font-size: 20px;
+    line-height: 28px;
     font-weight: 500;
     letter-spacing: 0.03rem;
     padding-left: 18px;
@@ -839,7 +840,6 @@ a:hover {
 
 .info-header {
     background-color: #005BE3;
-    padding: 6px 0;
 }
 
 .info-menu-item {
@@ -856,7 +856,7 @@ a:hover {
 }
 
 .info-button-cont {
-    position: absolute;
+    position: fixed;
     left: 1.5rem;
     bottom: 1.5rem;
     z-index: 1;
@@ -865,7 +865,7 @@ a:hover {
 .nav-text {
     color: black;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.03rem;
 }
 
@@ -981,24 +981,25 @@ a:hover {
 
 .landing {
     box-sizing: border-box;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     margin-bottom: 3rem;
 }
 
 .home-page .landing {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
+
 
 .landing p {
     font-family: 'Spectral';
     font-weight: 500;
-    font-size: 66px;
-    line-height: 72px;
+    font-size: 60px;
 }
 
 .projects-home {
     margin-top: .75rem;
     box-sizing: border-box;
+    margin-bottom: 3rem;
 }
 
 .project-item {
@@ -1092,7 +1093,7 @@ a:hover {
 
 .about-text {
     width: 66%;
-    line-height: 28px;
+    line-height: 1.15;
     font-size: 20px;
 }
 
@@ -1144,7 +1145,7 @@ a:hover {
 }
 
 .hope-page .page-content p {
-    color: #b4cdc2 !important;
+    color: #ddebe4 !important;
 }
 
 .hope-page .page-content .info-button:hover {
@@ -1156,7 +1157,7 @@ a:hover {
 }
 
 .affection-page {
-    background-color: #c19f2c;
+    background-color: #c27544;
 }
 
 .affection-page .page-content .info-button:hover {
@@ -1164,7 +1165,7 @@ a:hover {
 }
 
 .affection-page .page-content p {
-    color: #253122;
+    color: #FFFDFB;
 }
 
 .upside-page {
@@ -1209,9 +1210,9 @@ a:hover {
 
 .info-page p {
     color: white;
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.15;
+    font-weight: 250;
     font-family: 'Inter';
 }
 
@@ -1223,13 +1224,13 @@ a:hover {
 }
 
 .backpack-cont {
-    position: absolute;
-    right: 3rem;
-    top: 220px;
+    position: fixed;
+    right: 1.5rem;
+    top: 233px;
 }
 
 .backpack {
-    height: 380px;
+    width: 18vw;
 }
 
 .info-button {
@@ -1239,9 +1240,6 @@ a:hover {
     font-family: 'Spectral';
 }
 
-.info-link {
-    padding-bottom: 4px;
-}
 
 .info-link:hover {
     color: #fcff5e;
@@ -1258,8 +1256,8 @@ a:hover {
 .x-box {
     height: 36px;
     width: 36px;
-    position: absolute;
-    right: 1.5rem;
+    position: fixed;
+    right: .5rem;
     top: 10px;
 }
 
@@ -1268,7 +1266,7 @@ a:hover {
 }
 
 .subscribe-cont {
-    position: absolute;
+    position: fixed;
     bottom: 1rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -1345,7 +1343,7 @@ a:hover {
 
     .home-page .landing p {
         font-size: 54px;
-        line-height: 60px;
+        line-height: 1.15;
     }
 
     .landing {
@@ -1364,38 +1362,27 @@ a:hover {
     .backpack-cont {
         top: 250px;
     }
-
-    .backpack {
-        height: 350px;
-    }
 }
 
 @media (max-width: 1100px) {
     .info-page p {
         font-size: 20px;
     }
-
-    .backpack {
-        height: 300px;
-    }
 }
 
 @media (max-width: 1000px) {
     .landing p {
         font-size: 62px;
-        line-height: 68px;
     }
 }
 
 @media (max-width: 920px) {
     .landing p {
         font-size: 54px;
-        line-height: 60px;
     }
 
     .home-page .landing p {
         font-size: 48px;
-        line-height: 54px;
     }
 }
 
@@ -1414,12 +1401,10 @@ a:hover {
 
     .landing p {
         font-size: 78px;
-        line-height: 84px;
     }
 
     .home-page .landing p {
         font-size: 74px;
-        line-height: 80px;
     }
 
     .mobile-hide {
@@ -1457,7 +1442,13 @@ a:hover {
 
     .home-row {
         box-sizing: border-box;
-        padding-bottom: 5rem !important;
+        padding-bottom: 1rem;
+        
+    }
+
+    .about-text {
+        padding-bottom: 1rem;
+        width: 100%;
     }
 
     .mobile-50 {
@@ -1482,17 +1473,18 @@ a:hover {
         padding-bottom: 0;
     }
 
-    .backpack {
-        height: 280px;
-    }
-
     .backpack-cont {
         right: 1.5rem;
-        top: 220px;
+        top: 200px;
+    }
+
+    .backpack {
+        width: 25vw;
     }
     .menu-item:hover {
         color: inherit;
     }
+
 }
 
 @media (min-width: 816px) {
@@ -1512,30 +1504,23 @@ a:hover {
 @media (max-width: 701px) {
     .home-page .landing p {
         font-size: 64px;
-        line-height: 70px;
-    }
-
-    .backpack {
-        height: 220px;
     }
 }
 
 @media (max-width: 620px) {
     .home-page .landing p {
         font-size: 56px;
-        line-height: 62px;
     }
+    
 }
 
 @media (max-width: 580px) {
     .landing p {
         font-size: 68px;
-        line-height: 74px;
     }
 
     .home-page .landing p {
         font-size: 50px;
-        line-height: 56px;
     }
 
     .info-page p {
@@ -1545,18 +1530,37 @@ a:hover {
     .project-title {
         font-size: 20px;
     }
+    .big-half {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .header .mobile-menu {
+        padding-right: 1rem;
+    }
+    .ph3-mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .nopad-mobile {
+        padding: 0;
+    }
+    .backpack-cont {
+        right: 1rem;
+    }
+    .subscribe-cont {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
 }
 
 @media (max-width: 500px) {
     .landing p {
         font-size: 56px;
-        line-height: 62px;
     }
 
     .home-page .landing p {
         font-size: 42px;
-        line-height: 48px;
     }
 
 }
@@ -1564,7 +1568,6 @@ a:hover {
 @media (max-width: 440px) {
     .home-page .landing p {
         font-size: 38px;
-        line-height: 44px;
     }
 
     .landing {
@@ -1575,13 +1578,11 @@ a:hover {
 @media (max-width: 420px) {
     .landing p {
         font-size: 50px;
-        line-height: 56px;
     }
 }
 
 @media (max-width: 380px) {
     .landing p {
         font-size: 44px;
-        line-height: 48px;
     }
 }

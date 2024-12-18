@@ -6,11 +6,6 @@
                 <div class="landing">
                     <p>The Upside of Uncertainty</p>
                 </div>
-                <div class="img-half mobile">
-                    <div class="w-35 flex margin-a align-center mobile-icon-cont">
-                        <img class="w-100" src="/assets/upsideofuncertaintycover.webp" alt="">
-                    </div>
-                </div>
                 <div class="about-text">
                     <p>Uncertainty ability is an essential skillset for our evolving world. Training for individuals and
                         teams.</p>
@@ -18,7 +13,11 @@
                     <a href="https://www.theupsideofuncertainty.com/" target="_blank">
                         <p><span class="view-text upside">View →</span></p>
                     </a>
-
+                </div>
+                <div class="img-half mobile">
+                    <div class="w-35 flex margin-a align-center mobile-icon-cont">
+                        <img class="w-100" src="/assets/upsideofuncertaintycover.webp" alt="">
+                    </div>
                 </div>
             </div>
             <div class="w-382 img-half desktop small-half">
