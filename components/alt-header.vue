@@ -1,7 +1,7 @@
 <template>
     <div class="header-cont">
         <div class="alt-header">
-            <div class="flex flex-row align-center borderbox ph4 space-between">
+            <div class="flex flex-row align-center borderbox ph4 space-between ph3-mobile">
                 <div class="w-33 mobile-66">
                     <a href="/" exact-active-class="active">
                         <p class="logo">UP School</p>

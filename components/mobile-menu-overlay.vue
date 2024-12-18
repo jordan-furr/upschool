@@ -12,20 +12,20 @@
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/earnest-project" class="menu-item" @click="closeMenu"
-                            exact-active-class="active">
+                        <nuxt-link to="/earnest-project" class="menu-item"
+                            exact-active-class="active"  @click="toggleMenu">
                             <p>Earnest Project</p>
                         </nuxt-link>
                     </li>
                     <li>
 
-                        <nuxt-link to="affection-economy" class="menu-item" @click="closeMenu"
+                        <nuxt-link to="affection-economy" class="menu-item" @click="toggleMenu"
                             exact-active-class="active">
                             <p>Affection Economy</p>
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/hope-accelerator" class="menu-item" @click="closeMenu"
+                        <nuxt-link to="/hope-accelerator" class="menu-item" @click="toggleMenu"
                             exact-active-class="active">
                             <p>Hope Accelerator</p>
                         </nuxt-link>
@@ -36,23 +36,23 @@
             <nav @click.stop class="mt3">
                 <ul>
                     <li>
-                        <nuxt-link to="/info" class="menu-item" @click="closeMenu" exact-active-class="active">
+                        <nuxt-link to="/info" class="menu-item" @click="toggleMenu" exact-active-class="active">
                             <p>Info</p>
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/events" class="menu-item" @click="closeMenu" exact-active-class="active">
+                        <nuxt-link to="/events" class="menu-item" @click="toggleMenu" exact-active-class="active">
                             <p>Events</p>
                         </nuxt-link>
                     </li>
                     <li>
 
-                        <nuxt-link to="/articles" class="menu-item" @click="closeMenu" exact-active-class="active">
+                        <nuxt-link to="/articles" class="menu-item" @click="toggleMenu" exact-active-class="active">
                             <p>Articles</p>
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/contact" class="menu-item" @click="closeMenu" exact-active-class="active">
+                        <nuxt-link to="/contact" class="menu-item" @click="toggleMenu" exact-active-class="active">
                             <p>Contact</p>
                         </nuxt-link>
                     </li>
@@ -72,9 +72,6 @@ export default {
     },
     methods: {
         toggleMenu() {
-            this.$emit('toggle-menu');
-        },
-        closeMenu() {
             this.$emit('toggle-menu');
         }
     }
