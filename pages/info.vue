@@ -60,9 +60,6 @@
                         <nuxt-link to="/hope-accelerator" exact-active-class="active">
                             <p class="info-link">Hope Accelerator</p>
                         </nuxt-link>
-                        <nuxt-link to="https://www.uncertaintyscience.com/" target="_">
-                            <p class="info-link">Uncertainty Science</p>
-                        </nuxt-link>
                     </div>
                 </div>
             </div>
