@@ -788,6 +788,11 @@ a:hover {
     padding-top: 18px;
     padding-bottom: 18px;
     font-family: 'Spectral';
+    transition: transform 200ms ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px)
 }
 
 .menu-icon {
@@ -922,6 +927,15 @@ a:hover {
     display: block;
 }
 
+.learn-more {
+    color: #005BE3;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 .img-half {
     background-image: url('/assets/up-school-earnest-uncertainty.webp');
     background-size: cover;
@@ -956,11 +970,11 @@ a:hover {
 }
 
 .affection-page .img-half {
-    background-image: url('/assets/articles.webp');
+    background-image: url('/assets/affection-economy.JPG');
 }
 
 .hope-page .img-half {
-    background-image: url('/assets/hope.webp');
+    background-image: url('/assets/hope-accelerator.jpg');
 }
 
 .contact-page .img-half {
@@ -1122,6 +1136,15 @@ a:hover {
     color: var(--oyellow);
 }
 
+.view-text.hope {
+    color: white;
+    text-decoration-color: #85b3ff;
+}
+
+.view-text.hope:hover {
+    color: #85b3ff;
+}
+
 .view-text.upside {
     text-decoration-color: var(--upgreen);
     color: #C9FFAF;
@@ -1145,11 +1168,11 @@ a:hover {
 }
 
 .hope-page .page-content p {
-    color: #ddebe4 !important;
+    color: white !important;
 }
 
 .hope-page .page-content .info-button:hover {
-    color: #71502f !important;
+    color: #85b3ff !important;
 }
 
 .earnest-page .page-content p {
@@ -1157,7 +1180,7 @@ a:hover {
 }
 
 .affection-page {
-    background-color: #c27544;
+    background-color: #3975e6;
 }
 
 .affection-page .page-content .info-button:hover {

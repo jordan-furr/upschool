@@ -22,7 +22,8 @@
             </div>
             <transition name="accordion">
               <div v-show="activeIndex === index" class="project-content">
-                <p class="borderbox pr6 pb1">{{ item.content }}</p>
+                <p class="borderbox pr6 pb2">{{ item.content }}</p>
+                <nuxt-link :to="item.link" class="borderbox pr6 pb1 learn-more"> <p>Learn more</p> </nuxt-link>
               </div>
             </transition>
           </div>
@@ -48,19 +49,23 @@ export default {
       items: [
         {
           title: "The Upside of Uncertainty",
-          content: "A science-backed guide for navigating and thriving through uncertainty—based on interviews and insights from world-renowned leaders, innovators, entrepreneurs, artists, and creatives."
+          content: "A science-backed guide for navigating and thriving through uncertainty—based on interviews and insights from world-renowned leaders, innovators, entrepreneurs, artists, and creatives.",
+          link: "/upside-of-uncertainty"
         },
         {
           title: "Earnest Project",
-          content: "Can Earnestness change the world? Our exploration begins here. Our undertaking is to discover, interview, and highlight indivduals engaged in all kinds of earnest endeavors."
+          content: "Can Earnestness change the world? Our exploration begins here. Our undertaking is to discover, interview, and highlight indivduals engaged in all kinds of earnest endeavors.",
+          link: "/earnest-project"
         },
         {
           title: "Affection Economy",
-          content: "The Win Win Economy: Sustaining an ecosystem of care between leaders and team members."
+          content: "The Win Win Economy: Sustaining an ecosystem of care between leaders and team members.",
+          link: "/affection-economy"
         },
         {
           title: "Hope Accelerator",
-          content: "Insights based on Natures biodynamic regenerative systems. A framework for solutions for the stripped ecosystems."
+          content: "Insights based on Natures biodynamic regenerative systems. A framework for solutions for the stripped ecosystems.",
+          link: "/hope-accelerator"
         }
       ]
     };

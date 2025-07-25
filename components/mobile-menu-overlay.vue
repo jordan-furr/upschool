@@ -40,11 +40,11 @@
                             <p>Info</p>
                         </nuxt-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <nuxt-link to="/events" class="menu-item" @click="toggleMenu" exact-active-class="active">
                             <p>Events</p>
                         </nuxt-link>
-                    </li>
+                    </li> -->
                     <li>
 
                         <nuxt-link to="/articles" class="menu-item" @click="toggleMenu" exact-active-class="active">

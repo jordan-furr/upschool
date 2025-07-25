@@ -11,7 +11,7 @@
                         teams.</p>
                     <p>The Upside of Uncertainty teaches uncertainty + possibility are two sides of the same coin.</p>
                     <a href="https://www.theupsideofuncertainty.com/" target="_blank">
-                        <p><span class="view-text upside">View →</span></p>
+                        <p><span class="view-text upside">View web page →</span></p>
                     </a>
                 </div>
                 <div class="img-half mobile">
