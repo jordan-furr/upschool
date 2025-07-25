@@ -67,7 +67,7 @@
                 <div class="mobile-50">
                     <div class="pr3 borderbox nopad-mobile">
                         <p>Design</p>
-                        <a href="https://badtaste.dev/">
+                        <a href="https://badtaste.dev/" target="_">
                             <p><span class="info-link">Bad Taste</span></p>
                         </a>
                         <p>Ezra Geo</p>

@@ -14,8 +14,8 @@
         <div :style="{ backgroundColor: navColor }" class="w-382 borderbox pl2 pr4 desktop-menu small-half">
           <div class="flex flex-row space-between">
             <div class="flex flex-row">
-              <nuxt-link to="/events" class="menu-item" exact-active-class="active" :style="{ color: textColor }">
-                <p>Events</p>
+              <nuxt-link to="/info" class="menu-item" exact-active-class="active" :style="{ color: textColor }">
+                <p>Information</p>
               </nuxt-link>
               <nuxt-link to="/articles" class="menu-item" exact-active-class="active" :style="{ color: textColor }">
                 <p>Articles</p>

@@ -1,6 +1,6 @@
 <template>
     <div class="earnest-page">
-        <up-header :logoColor="'#fff'" :headerColor="'#d6b43e'" :textColor="'#fff'" :navColor="'#d6b43e'" />
+        <up-header :logoColor="'#fff'" :headerColor="'#c9a48f'" :textColor="'#fff'" :navColor="'#c9a48f'" />
         <div class="flex flex-row w-100 page-content home-row">
             <div class="w-618 flex flex-col ph4 borderbox big-half">
                 <div class="landing">
@@ -10,7 +10,7 @@
                 <div class="about-text">
                     <p>Can earnestness change the world? Our exploration begins here.</p>
                     <p>Earnest Project is a community and research initiative. Join us in the celebrating the joy of earnest living. </p>
-                    <a href="https://earnestproject.com/" target="_blank"><p><span class="view-text earnest">View --></span></p></a>
+                    <a href="https://earnestproject.com/" target="_blank"><p><span class="view-text earnest">View web page →</span></p></a>
                 </div>
                 <div class="img-half mobile">
                     <div class="w-50 flex margin-a align-center mobile-icon-cont">

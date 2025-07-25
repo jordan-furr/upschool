@@ -9,9 +9,6 @@
                 </a>
             </div>
         </div>
-        <div class="info-button-cont pl4">
-            <p class="nav-text blue-hover">INFO</p>
-        </div>
         <div class="subscribe-cont">
             <white-newsletter />
         </div>
