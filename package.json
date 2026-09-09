@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "firebase": "^11.0.2",
     "nuxt": "^3.12.3",
     "vue": "latest"
   }

@@ -19,7 +19,7 @@
                     </li>
                     <li>
 
-                        <nuxt-link to="affection-economy" class="menu-item" @click="toggleMenu"
+                        <nuxt-link to="/affection-economy" class="menu-item" @click="toggleMenu"
                             exact-active-class="active">
                             <p>Affection Economy</p>
                         </nuxt-link>

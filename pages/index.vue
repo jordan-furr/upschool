@@ -20,12 +20,12 @@
                 +
               </span>
             </div>
-            <transition name="accordion">
-              <div v-show="activeIndex === index" class="project-content">
+            <div class="project-content">
+              <div class="project-content-inner">
                 <p class="borderbox pr6 pb2">{{ item.content }}</p>
                 <nuxt-link :to="item.link" class="borderbox pr6 pb1 learn-more"> <p>Learn more</p> </nuxt-link>
               </div>
-            </transition>
+            </div>
           </div>
         </div>
       </div>
@@ -40,6 +40,17 @@
     </div>
   </div>
 </template>
+
+<script setup>
+// The .img-half background is the LCP element on this page. It is only
+// discoverable after style.css parses, so preload it with the build-hashed
+// URL that Vite resolves this import to.
+import heroUrl from '~/assets/up-school-earnest-uncertainty.webp';
+
+useHead({
+  link: [{ rel: 'preload', as: 'image', href: heroUrl, fetchpriority: 'high' }]
+});
+</script>
 
 <script>
 export default {

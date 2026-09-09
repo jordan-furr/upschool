@@ -4,7 +4,7 @@
         <div class="info-page ph4 flex-col ph3-mobile">
             <div class="flex-row borderbox info-row space-between w-100">
                 <div class="w-33 mobile-100">
-                    <div class="flex-row space-between">
+                    <div class="flex-row space-between info-intro">
                         <div class="w-100 mobile-50 mb6">
                             <p>An online and Paris based education initiative that builds community and resources
                                 through
@@ -21,14 +21,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 mobile-50 mb6">
+                    <div class="w-100 mobile-50 mb6 info-founded">
                         <p>UP School was founded in 2020 by Susannah and Nathan FURR, out of a desire to seek
                             answers to
                             problems of navigating uncertainty, passion, work, and relationships.</p>
                     </div>
                 </div>
                 <div class="w-20 mobile-hide">
-                    <div>
+                    <div class="info-contact">
                         <a href="mailto:info@upschool.org">
                             <p><span class="info-link">info@upschool.org</span></p>
                         </a>
@@ -37,44 +37,43 @@
                         </a>
                     </div>
                 </div>
-                <div class="w-25 mobile-100 mb6 mobile-hide">
+                <div class="w-25 mobile-100 mb6 mobile-hide info-quote">
                     <div class="mobile-100 pb3 text-right">
                         <p>"Friends, every day do something that won’t compute." Wendell Berry.</p>
                     </div>
                 </div>
-
-            </div>
-            <div class="w-100 flex-row mb6">
-                <div class="mobile-50">
-                    <div class="pr3 borderbox nopad-mobile">
-                        <p>Projects</p>
-                        <nuxt-link to="/upside-of-uncertainty" exact-active-class="active">
-                            <p class="info-link">Upside of Uncertainty</p>
-                        </nuxt-link>
-                        <nuxt-link to="/earnest-project" exact-active-class="active">
-                            <p class="info-link">Earnest Project</p>
-                        </nuxt-link>
-                        <nuxt-link to="/affection-economy" exact-active-class="active">
-                            <p class="info-link">Affection Economy</p>
-                        </nuxt-link>
-                        <nuxt-link to="/hope-accelerator" exact-active-class="active">
-                            <p class="info-link">Hope Accelerator</p>
-                        </nuxt-link>
+                <div class="info-projects w-100 flex-row mb6">
+                    <div class="mobile-50">
+                        <div class="pr3 borderbox nopad-mobile">
+                            <p>Projects</p>
+                            <nuxt-link to="/upside-of-uncertainty" exact-active-class="active">
+                                <p class="info-link">Upside of Uncertainty</p>
+                            </nuxt-link>
+                            <nuxt-link to="/earnest-project" exact-active-class="active">
+                                <p class="info-link">Earnest Project</p>
+                            </nuxt-link>
+                            <nuxt-link to="/affection-economy" exact-active-class="active">
+                                <p class="info-link">Affection Economy</p>
+                            </nuxt-link>
+                            <nuxt-link to="/hope-accelerator" exact-active-class="active">
+                                <p class="info-link">Hope Accelerator</p>
+                            </nuxt-link>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="w-100 flex-row mb6">
-                <div class="mobile-50">
+                <div class="info-design mobile-50 mb6">
                     <div class="pr3 borderbox nopad-mobile">
                         <p>Design</p>
                         <a href="https://badtaste.dev/" target="_">
                             <p><span class="info-link">Bad Taste</span></p>
                         </a>
-                        <p>Ezra Geo</p>
+                        <a href="https://www.ezrafurr.com/" target="_">
+                            <p><span class="info-link">Ezra Geo</span></p>
+                        </a>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
         <div class="backpack-cont">
             <img class="backpack" src="/assets/UPschool-backpack.webp" alt="">

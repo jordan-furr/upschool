@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Forum&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
 :root {
     --blue: #005BE3;
     --miblue: #52B6FF;
@@ -170,7 +167,7 @@ h6 {
 }
 
 .w-618 {
-    width: 61.8%;
+    width: 58%;
 }
 
 .w-60 {
@@ -202,7 +199,7 @@ h6 {
 }
 
 .w-382 {
-    width: 38.2%;
+    width: 42%;
 }
 
 .w-30 {
@@ -890,20 +887,27 @@ a:hover {
 }
 
 .dropdown {
-    overflow: hidden;
+    /* Positioned so the panel below can be anchored to it. The old
+       overflow:hidden is gone: it was harmless while this box was static
+       (an absolute child escapes a static ancestor's clip) but would crop
+       the panel now that this is the containing block. */
+    position: relative;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    max-width: 160px;
+    /* Left edge stays under the trigger; the negative right cancels the
+       nav's own pr4 padding (1.5rem) so the panel meets the screen edge. */
+    left: 0;
+    right: -1.5rem;
     background-color: var(--blue);
     z-index: 1;
 }
 
 .dropdown-content p {
     font-weight: 400;
-    font-size: 14.5px;
+    font-size: 15.5px;
     letter-spacing: 0.03rem;
 }
 
@@ -970,11 +974,11 @@ a:hover {
 }
 
 .affection-page .img-half {
-    background-image: url('/assets/affection-economy.JPG');
+    background-image: url('/assets/affection-economy-bg.webp');
 }
 
 .hope-page .img-half {
-    background-image: url('/assets/hope-accelerator.jpg');
+    background-image: url('/assets/hope-accelerator-bg.webp');
 }
 
 .contact-page .img-half {
@@ -1042,13 +1046,27 @@ a:hover {
 
 .project-content {
     font-family: 'Arimo';
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
+    /* 0fr -> 1fr animates to the content's real height. The old
+       max-height:0 -> 700px guess spent most of its 400ms collapsing empty
+       space, so a closing row appeared to hang before it moved. */
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 260ms ease;
     padding: 0 10px;
-    padding-top: 18px;
     font-weight: 200;
     font-size: 18px;
+}
+
+.project-content-inner {
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* The 18px sits on the content, not on the clipping wrapper: an element's
+   own padding is not clipped by its own overflow, so putting it here would
+   hold the row 18px open when closed. */
+.project-content-inner > :first-child {
+    padding-top: 18px;
 }
 
 .blue {
@@ -1073,7 +1091,7 @@ a:hover {
 }
 
 .project-item.active .project-content {
-    max-height: 700px;
+    grid-template-rows: 1fr;
 }
 
 .project-item.active .plus-icon {
@@ -1092,19 +1110,6 @@ a:hover {
     color: black;
 }
 
-.accordion-enter-active,
-.accordion-leave-active {
-    transition: max-height 200ms ease;
-}
-
-.accordion-enter,
-.accordion-leave-to
-
-/* .accordion-leave-active in <2.1.8 */
-    {
-    max-height: 0;
-}
-
 .about-text {
     width: 66%;
     line-height: 1.15;
@@ -1112,7 +1117,7 @@ a:hover {
 }
 
 .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .view-text {
@@ -1277,8 +1282,8 @@ a:hover {
 }
 
 .x-box {
-    height: 36px;
-    width: 36px;
+    height: 30px;
+    width: 30px;
     position: fixed;
     right: .5rem;
     top: 10px;
@@ -1412,7 +1417,7 @@ input[type="email"] {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1369px) {
     .big-half {
         width: 50%
     }
@@ -1429,10 +1434,6 @@ input[type="email"] {
     .landing {
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
-    }
-
-    .menu-item {
-        font-size: 18px;
     }
 
     .info-page p {
@@ -1682,5 +1683,337 @@ input[type="email"] {
 @media (max-width: 380px) {
     .landing p {
         font-size: 44px;
+    }
+}
+
+/* ==========================================================================
+   INTERACTION POLISH
+   Follows the vocabulary already in the file: ~200ms ease, a 2px lift, and
+   the blue as the accent. Everything here is additive — no layout changes.
+   ========================================================================== */
+
+/* --- Cursors -------------------------------------------------------------
+   `*:hover { cursor: default }` above suppresses the I-beam over body copy,
+   but it also catches form fields and clickable controls. Put those back. */
+input:hover,
+input:focus,
+textarea:hover {
+    cursor: text;
+}
+
+button:hover,
+.close-button:hover,
+.menu-icon:hover,
+.plus-icon:hover,
+.x-box:hover,
+.x-box:hover *,
+.logo:hover,
+.logo:hover *,
+.menu-item:hover,
+.menu-item:hover *,
+.dropdown:hover,
+.dropdown:hover *,
+.dropdown-content:hover,
+.dropdown-content a:hover,
+.dropdown-content a:hover * {
+    cursor: pointer;
+}
+
+/* --- Ease the colour swaps ----------------------------------------------
+   These hovers already changed colour, they just snapped. */
+.view-text,
+.info-link,
+.learn-more,
+.project-title,
+.dropdown-content a,
+.logo {
+    transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+/* --- Underline that fades in rather than popping in ----------------------
+   Reserving the underline up front and animating only its colour means the
+   text never shifts on hover. */
+.learn-more,
+.info-link {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+}
+
+.learn-more:hover {
+    text-decoration-color: currentColor;
+}
+
+.info-link:hover {
+    text-decoration-color: currentColor;
+}
+
+/* --- Wordmark ------------------------------------------------------------
+   inline-block so the box (and so the hover target and the raise) wraps the
+   words rather than the whole 61.8% column, so hovering empty space beside
+   the wordmark does not lift it. Same 2px raise and timing as .menu-item.
+   (Colour is set inline on this element by up-header.vue, so a :hover
+   colour rule could never win — transform is not set inline, so it does.) */
+.logo {
+    display: inline-block;
+    transition: transform 200ms ease-in-out;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+}
+
+/* --- Projects dropdown ---------------------------------------------------
+   Was display:none -> display:block, which cannot transition. Swapped for
+   visibility/opacity so it can fade. NB: do not put a transform on
+   `.dropdown` itself — it has overflow:hidden, and a transform would make it
+   the containing block and clip this menu. */
+.dropdown-content {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 160ms ease, transform 160ms ease, visibility 0s linear 160ms;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 160ms ease, transform 160ms ease, visibility 0s;
+}
+
+.dropdown-content a {
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+/* --- Accordion -----------------------------------------------------------
+   A "+" is symmetrical under a quarter turn, so the existing rotate(90deg)
+   on both :hover and .active was invisible. 45deg is the rotation that
+   actually turns "+" into "x", so it belongs on the open state only —
+   using it for hover would signal "close" on a row that is still shut.
+   Hover gets a scale instead: an affordance, not a state change. */
+.project-item.active .plus-icon,
+.project-item.active:hover .plus-icon {
+    transform: rotate(45deg);
+}
+
+.project-item:hover .plus-icon {
+    transform: scale(1.15);
+}
+
+.project-item.active:hover .plus-icon {
+    transform: rotate(45deg) scale(1.15);
+}
+
+/* --- Buttons ------------------------------------------------------------- */
+.subscribe-form button,
+.white-subscribe-form button,
+.close-button {
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+/* --- Close / back X ------------------------------------------------------
+   A quarter turn: the glyph has 90deg rotational symmetry, so the spin is
+   visible while it runs but still settles as an X. 45deg would leave it
+   sitting as a "+", which reads as open rather than close.
+   Scoped to .x-box so it covers both markups — the info page's
+   <p class="close-button"> and alt-header's <nuxt-link>. */
+.x-box svg {
+    transition: transform 180ms ease-in-out;
+}
+
+.x-box:hover svg {
+    transform: rotate(90deg);
+}
+
+/* --- Email field ---------------------------------------------------------
+   The form lost Mailchimp's script, so native validation is doing the work;
+   give the field some feedback of its own. */
+.subscribe-form input,
+.white-subscribe-form input {
+    transition: box-shadow 160ms ease;
+}
+
+.subscribe-form input:hover,
+.white-subscribe-form input:hover {
+    box-shadow: inset 0 -2px 0 rgba(0, 91, 227, 0.35);
+}
+
+/* --- Keyboard focus ------------------------------------------------------
+   There were no focus styles at all. :focus-visible keeps these off mouse
+   clicks and shows them only for keyboard users. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.dropdown:focus-visible,
+.project-item:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+    border-radius: 1px;
+}
+
+/* The blue ring is invisible against anything blue or dark, which covers the
+   nav bar, the dropdown and the coloured project pages. Switch to white. */
+.desktop-menu a:focus-visible,
+.desktop-menu .dropdown:focus-visible,
+.dropdown-content a:focus-visible,
+.mobile-menu a:focus-visible,
+.menu-overlay a:focus-visible,
+.earnest-page a:focus-visible,
+.hope-page a:focus-visible,
+.affection-page a:focus-visible,
+.upside-page a:focus-visible,
+.earnest-page button:focus-visible,
+.hope-page button:focus-visible,
+.affection-page button:focus-visible,
+.upside-page button:focus-visible,
+.subscribe-form button:focus-visible {
+    outline-color: #fff;
+}
+
+/* --- Respect a reduced-motion preference --------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+
+    .menu-item:hover,
+    .dropdown-content {
+        transform: none;
+    }
+}
+
+/* --- Info page: two-row column grid (desktop) ---------------------------
+   The Design block sits under the contact links, top-aligned with the
+   "UP School was founded in 2020" paragraph. They line up because they are
+   both in grid row 2 of one grid, rather than by a guessed offset that
+   would drift as the intro paragraph rewraps.
+
+   `display: contents` lets the existing .w-33 / .w-20 wrappers stay in the
+   markup (mobile still uses them) while their children become the grid
+   items on desktop. Below 816px none of this applies and .info-row falls
+   back to the original stacked flex column. */
+@media (min-width: 816px) {
+    .info-row {
+        display: grid;
+        grid-template-columns: 33.3334% 20% 25%;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .info-row > .w-33,
+    .info-row > .w-20 {
+        display: contents;
+    }
+
+    .info-intro {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .info-founded {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .info-contact {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .info-design {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* Projects keeps its old position under column 1; it lives inside the
+       grid only so that mobile keeps the original Projects-then-Design
+       order in the DOM. */
+    .info-projects {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+    }
+
+    .info-quote {
+        grid-column: 3;
+        grid-row: 1;
+        /* .w-25 sized against the whole row when this was flex; as a grid
+           item that 25% would resolve against the 25% track and shrink it. */
+        width: 100%;
+    }
+}
+
+/* --- Info page: room to scroll past the fixed newsletter bar (mobile) ----
+   .subscribe-cont is position:fixed and occupies ~61px from the bottom
+   (45px tall + its 1rem offset), so the last line of the Design block sat
+   behind it with nothing to scroll into. */
+@media (max-width: 815px) {
+    .info-page {
+        padding-bottom: 7rem;
+    }
+}
+
+
+/* --- Menu bar vs overlay ---------------------------------------------------
+   The five items measure 531px at 20px (letter-spacing included) and the
+   nav adds 36px of its own padding, so the bar needs 567px. That fits from
+   1150px up (50% of the viewport) and, once the 58/42 split takes over at
+   1370px, from 42%. Below 1150px the existing Menu overlay takes over.
+   Scoped rules rather than moving the 815/816 breakpoints, which carry a
+   lot of unrelated layout. */
+@media (max-width: 1149px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .header .mobile-menu {
+        padding-right: 1.5rem;
+    }
+}
+
+/* --- Project pages: text block placement (desktop) -----------------------
+   Sits in the upper third rather than dead centre: 160px from the top of
+   the row, with a real left inset so it is not hugging the edge.
+   Scoped to the four project pages so the home page is untouched, and to
+   desktop so the stacked mobile layout keeps its own rhythm. */
+@media (min-width: 816px) {
+
+    .earnest-page .home-row > .big-half,
+    .affection-page .home-row > .big-half,
+    .hope-page .home-row > .big-half,
+    .upside-page .home-row > .big-half {
+        justify-content: flex-start;
+        padding-top: 160px;
+        padding-left: 4rem;
+        padding-right: 3rem;
+    }
+
+    /* the 2.5rem top margin would stack on top of the 124px inset */
+    .earnest-page .landing,
+    .affection-page .landing,
+    .hope-page .landing,
+    .upside-page .landing {
+        margin-top: 0;
+    }
+
+    .earnest-page .about-text,
+    .affection-page .about-text,
+    .hope-page .about-text,
+    .upside-page .about-text {
+        width: 78%;
     }
 }
