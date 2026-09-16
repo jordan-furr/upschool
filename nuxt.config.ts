@@ -6,8 +6,30 @@ export default defineNuxtConfig({
 
   // Every page is static content, so render them to HTML at build time and
   // let Nitro serve the files directly instead of rendering per request.
+  //
+  // Every route is listed explicitly rather than left to crawlLinks alone.
+  // Crawling only finds a page if some already-crawled page links to it, so a
+  // nav rewrite that drops or client-gates a link would silently stop that
+  // page from being prerendered -- it would then 404/500 for crawlers while
+  // still working for in-app navigation. crawlLinks stays on to catch links
+  // added later. failOnError makes a route that cannot render break the build
+  // instead of shipping a gap.
   nitro: {
-    prerender: { crawlLinks: true, routes: ['/'] }
+    prerender: {
+      crawlLinks: true,
+      failOnError: true,
+      routes: [
+        '/',
+        '/info',
+        '/articles',
+        '/contact',
+        '/events',
+        '/upside-of-uncertainty',
+        '/earnest-project',
+        '/affection-economy',
+        '/hope-accelerator'
+      ]
+    }
   },
 
   app: {
